@@ -1,0 +1,55 @@
+<HTA:APPLICATION
+     ID="clockForTham"
+     APPLICATIONNAME="Clock"
+     #SCROLL="no"
+     SINGLEINSTANCE="yes"
+     #CAPTION="no"
+     #BORDER="none"
+     #CONTEXTMENU="no"
+     #INNERBORDER="no"
+     #ICON="C:\Program Files\Microsoft Office\OFFICE11\MSN.ICO"
+     SELECTION="no"
+     SHOWINTASKBAR="yes"
+>
+
+<HTML>
+<HEAD>
+<TITLE>Clock</TITLE>
+<script type="text/javascript" src="./dateFormat.js"></script>
+</HEAD>
+
+<BODY onload="init()"  style="background:;" >
+	<div id="content" style="text-align:center; font-weight:bold; font-size:16; font-family:Eras Medium ITC; color:blue;"></div>
+</BODY>
+
+<script type="text/javascript" >
+function init()
+{
+	window. resizeTo(300, 200);
+	window. moveTo(500, 100);
+	updateTime();
+	setInterval("updateTime()", 10*1000);
+	//alert("content");
+	//setInterval("blink()", 300);
+	//setTimeout("window.close()", 1000*5);
+	//alert("HERE!!");
+}
+
+function updateTime()
+{
+	var content = document.getElementById("content");
+	var date = new Date();
+	content.innerText = date.format("yyyy-mm-dd HH:MM:ss") + "\n" +content.innerText;
+
+}
+
+function blink()
+{
+	var content = document.getElementById("content");
+	content.style.color=="blue" ? content.style.color="red":content.style.color="blue";
+
+}
+
+</script>
+
+</HTML>
