@@ -1,0 +1,14 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-11-09 10:49:44 #1 store] 
+Database 'C:\Project\Code\SelfCreatedTool\selectedCpy\stock.odb' is opened by 5324@peng
+
+[2011-11-09 10:49:44 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-11-09 10:49:45 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-11-09 10:49:45 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+

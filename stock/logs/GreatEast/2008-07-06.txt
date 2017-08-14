@@ -1,0 +1,2 @@
+Time		Price	Change	C%	BVol	Buy	Sell	SVol	LP	HP
+[20:26:12] 	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined

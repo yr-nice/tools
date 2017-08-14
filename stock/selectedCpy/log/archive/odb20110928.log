@@ -1,0 +1,34 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-28 19:03:19 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\stock.odb' is opened by 4292@peng
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-28 19:05:48 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\stock.odb' is opened by 4332@peng
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-28 19:07:51 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\s.odb' is opened by 5640@peng
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-28 19:19:29 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\stock.odb' is opened by 5044@peng
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-28 19:31:10 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\stock.odb' is opened by 3880@peng
+
+[2011-09-28 19:31:10 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-09-28 19:31:10 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-09-28 19:31:10 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+

@@ -1,0 +1,2 @@
+Time		Price	Change	C%	BVol	Buy	Sell	SVol	LP	HP
+[10:34:29] 	12.8	-0.04	-0.311	3	12.8	12.82	6	12.84	12.78

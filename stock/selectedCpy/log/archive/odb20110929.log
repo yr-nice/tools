@@ -1,0 +1,84 @@
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-29 11:38:11 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\stock.odb' is opened by 4600@peng
+
+[2011-09-29 11:38:11 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-09-29 11:38:11 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-09-29 11:38:11 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-29 11:59:30 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\stock.odb' is opened by 1888@peng
+
+[2011-09-29 11:59:31 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-09-29 11:59:31 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-09-29 11:59:31 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-29 13:06:46 #1 store] 
+Database 'C:\Documents and Settings\peng mu\Desktop\da\stock.odb' is opened by 5660@peng
+
+[2011-09-29 13:06:46 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-09-29 13:06:46 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-09-29 13:06:46 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-29 14:00:06 #1 store] 
+Database 'C:\Project\Code\SelfCreatedTool\selectedCpy\stock.odb' is opened by 5716@peng
+
+[2011-09-29 14:00:06 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-09-29 14:00:06 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-09-29 14:00:06 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-29 14:01:01 #1 store] 
+Database 'C:\Project\Code\SelfCreatedTool\selectedCpy\stock.odb' is opened by 3016@peng
+
+[2011-09-29 14:01:01 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-09-29 14:01:01 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-09-29 14:01:01 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+
+------------------------------------------------------------------------------------------------------------------------
+
+[2011-09-29 14:02:01 #1 store] 
+Database 'C:\Project\Code\SelfCreatedTool\selectedCpy\stock.odb' is opened by 220@peng
+
+[2011-09-29 14:02:01 #2 type] 
+Type com.mu.stock.entity.Company is not enhanced.
+
+[2011-09-29 14:02:01 #3 type] 
+Type com.mu.stock.entity.RealtimeDataLog is not enhanced.
+
+[2011-09-29 14:02:01 #4 type] 
+Type com.mu.stock.entity.DailyPriceLog is not enhanced.
+

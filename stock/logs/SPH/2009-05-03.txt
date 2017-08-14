@@ -1,0 +1,9 @@
+Time		Price	Change	C%	BVol	Buy	Sell	SVol	LP	HP
+[13:41:01] 	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined
+[13:41:16] 	2.900	-0.040	-1.4	5	2.880	2.900	45	2.910	2.840
+[13:41:41] 	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined
+[13:42:56] 	2.900	-0.040	-1.4	5	2.880	2.900	45	2.910	2.840
+[13:50:11] 	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined
+[13:51:29] 	2.900	-0.040	-1.4	5	2.880	2.900	45	2.910	2.840
+[13:53:39] 	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined	undefined
+[13:55:18] 	2.900	-0.040	-1.4	5	2.880	2.900	45	2.910	2.840
