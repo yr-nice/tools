@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            
+            .holder {
+                width: 430px;
+                height: 375px;
+                background: #eeffff;
+                padding: 7px;
+                border-radius: 5px;
+                border: 1px solid #999999;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -215px;
+                margin-top: -187px;
+            }
+
+            #import_margins {
+                position: relative;
+                top: 43px;
+            }
+
+            #import_proxies {
+                resize: none;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 12px;
+                width: 300px;
+                height: 150px;
+                color: #666666;
+                border: 1px solid #999999;
+                border-radius: 5px;
+                font-family: "Open Sans";
+                font-size: 14px;
+            }
+
+            #import_proxies::-webkit-input-placeholder {
+                color: #bbbbbb;
+            }
+
+            #import_input {
+                background: #ffffff;
+                width: 304px;
+                height: 41px;
+                margin-left: auto;
+                margin-right: auto;
+                line-height: 41px;
+                color: #666666;
+                border: 1px solid #999999;
+                border-radius: 5px;
+                margin-bottom: 14px;
+            }
+
+            #import_name {
+                width: 168px;
+                display: inline-block;
+                font-family: "Open Sans";
+                font-size: 14px;
+                padding-left: 5px;
+            }
+
+            .import_placeholder {
+                color: #bbbbbb;
+            }
+
+            #import_browse {
+                display: inline-block;
+                width: 126px;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-left: 1px solid #999999;
+                height: 39px;
+                border-top: 1px solid #efefef;
+                border-bottom: 1px solid #efefef; 
+            }
+
+            #import_browse:hover {
+                border-top: 1px solid #dfdfdf;
+                border-bottom: 1px solid #dfdfdf;
+            }
+
+            #import_browse > img {
+                position: relative;
+                width: 17px;
+                height: 17px;
+                top: 3px;
+                left: -5px;
+            }
+
+            #import_submit {
+                margin-left: auto;
+                margin-right: auto;
+                width: 180px;
+            }
+
+            #import_submit > div {
+                width: 78px;
+                height: 41px;
+                line-height: 41px;
+                display: inline-block;
+                border-radius: 5px;
+                border: 1px solid #999999;
+                margin-left: 5px;
+                margin-right: 5px;
+                overflow: hidden;
+            }
+            
+            #import_load {
+                position: relative;
+                top: 100px;
+                display: none;
+            }
+            
+            .button {
+                background: #efefef;
+                cursor: pointer;
+                color: #666666;
+                text-align: center;
+                font-family: "Open Sans";
+                font-size: 14px;
+                -webkit-user-select: none;
+            }
+
+            .button:hover {
+                background: #dfdfdf;
+            }
+            
+            .loading_img {
+                width: 31px;
+                height: 31px;
+                margin-left: auto;
+                margin-right: auto;
+                background: url(img/loading.gif);
+            }
+
+            .loading_msg {
+                margin-left: auto;
+                margin-right: auto;
+                width: 170px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                font-family: Verdana;
+                font-size: 12px;
+                color: #666666;
+                background: #f6f6f6;
+                border: 1px solid #999999;
+                border-radius: 5px;
+                margin-top: 8px;
+                padding: 5px;
+            }   
+        </style>
+        <script src="jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <div id="import_holder" class="holder">
+            <div id="import_margins">
+                <div id="import_data">
+                    <div>
+                        <textarea id="import_proxies" placeholder="Proxy servers from import file"></textarea>
+                    </div>
+                    <div id="import_input">
+                        <input id="import_file" type="file" accept="text/*" style="display:none;" />
+                        <div id="import_name" class="import_placeholder">No File Chosen</div>
+                        <div id="import_browse" class="button"><img src="img/icons/open.png" />Choose File</div>
+                    </div>
+                    <div id="import_submit">
+                        <div id="import_save" class="button">Save</div><div id="import_cancel" class="button">Cancel</div>
+                    </div>
+                </div>
+                <div id="import_load">
+                </div>
+            </div>
+        </div>
+        <script src="file_input.js"></script>
+    </body>
+</html>

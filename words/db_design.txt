@@ -1,0 +1,24 @@
+>> Elements
+   id, name, table_name, columns, timestamp
+   
+>> Words
+   id, 	word, phonetic, translation, example, tags, rank, image, remarks, related, extended, timestamp
+   
+>> Dialog
+   id, dialog, translation, tags, image, rank, remarks, related, extended, timstamp   
+
+>> Ingredients
+   id, name, description, tags, match,  conflict, image, remarks, rank, related,  extended, timestamp
+
+>> Receipts
+   id, name, description, tags, ingredients, image, remarks, rank, related, extended, timestamp
+
+>> Tags
+   id, tags, image, timestamp
+   
+>> Attributes
+   id, name, image, timestamp
+   
+>> Extended Attr
+   id, attr_id, table_id, item_id, value, timestamp
+   

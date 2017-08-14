@@ -1,0 +1,71 @@
+<html>
+<head><title></title>
+  <script type="text/javascript" src="./pmjslib.js"></script>
+  <script type="text/javascript" src="../stock/prototype.js"></script>
+</head>
+<body>
+
+  <div><textarea id="in" style="width:60%; height:100px;"></textarea></div>
+  <div><textarea id="testarea" style="width:60%; height:300px;"></textarea></div>
+  <button onclick="test()">Test</button>
+  <button onclick="tryAjax()">TryAjax</button>
+  <button onclick="tryFunc()">TryFunc</button>
+  <div><textarea id="out" style="width:60%; height:100px;"></textarea></div>
+
+  <script type="text/javascript">
+
+
+	function test()
+	{
+		//dhtmlLoadScript("./pmjslib.js");
+		eval(document.getElementById("testarea").value);
+	}
+
+	function dhtmlLoadScript(url)
+	{
+		var e = document.createElement("script");
+		e.src = url;
+		e.type="text/javascript";
+		document.getElementsByTagName("head")[0].appendChild(e);
+	}
+	function tryAjax()
+	{
+		var a = new Ajax.Request("http://www.sse.com.cn/sseportal/ps/zhs/hqjt/zs.jsp",
+			{
+				method: 'get',
+				asynchronous: false,
+				onComplete: function(transport)
+				{
+					//alert(transport.responseText);
+					document.getElementById("in").value = transport.responseText;
+					procDoc(transport.responseText);
+				},
+				onError: function(e)
+				{
+					alert(e);
+				}
+
+			});
+
+	}
+	function procDoc(str)
+	{
+		//alert(str);
+		//str = "fsdST Indexfsads<";
+		var re=minMatch(str, /<tr>[\s\S]*ST Index[\s\S]*>(.+)&nbsp;(.+)<\/div>[\s\S]*<\/tr>/i);
+		//var re=excludeMatch(str, /<tr>[\s\S]*ST Index[\s\S]*>(.+)&nbsp;(.+)<\/div>[\s\S]*<\/tr>/ig, "<tr>");
+		//alert(re.length);
+		//alert(str.match(/[a-z]*ST Index[a-z]*/i));
+	}
+	function tryFunc()
+	{
+		var str = document.getElementById("in").value;
+		var re=excludeMatch(str, /ST Index[\s\S]*>(.{1,10})&nbsp;(.{1,10})<\/div><\/td>/i, "<tr>");
+		alert(re.length);
+		fflog("end");
+		for(var i =0; i<re.length; i++)
+			fflog(re[i]);
+	}
+  </script>
+</body>
+</html>

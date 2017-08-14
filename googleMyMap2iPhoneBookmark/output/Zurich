@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bookmarks</key>
+	<array>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>24hour zurich card plus for 36CHF can be purchased at: VBZ Ticketerias; train stations, ferry station at Burkliplatz; Tourist Service at the main station</string>
+			<key>LatitudeE6</key>
+			<integer>47378187</integer>
+			<key>LongitudeE6</key>
+			<integer>8540191</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.378187,8.540191%20%28main%20station%20%29</string>
+			<key>Name</key>
+			<string>main station </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>from main station, walk to central, take tram 15/7 - Direction: Bucheggplatz, alight Ottikerstrasse, then walk another 2 mins</string>
+			<key>LatitudeE6</key>
+			<integer>47384815</integer>
+			<key>LongitudeE6</key>
+			<integer>8543057</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.384815,8.543057%20%28Rex%20%29</string>
+			<key>Name</key>
+			<string>Rex </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>47677802</integer>
+			<key>LongitudeE6</key>
+			<integer>8616878</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.677802,8.616878%20%28Rhine%20Falls%20%29</string>
+			<key>Name</key>
+			<string>Rhine Falls </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>overlook the fall from Laufeu,The nearest community is Neuhausen am Rheinfall, where tourists can also view the Schloss Worth castle.[4] Boat trips can be taken up the Rhine to the falls and the Rheinfallfelsen. There are also viewing platforms with a spectacular view of the falls built on both sides of the Rhine. Neuhausen is a stop of the S-Bahn Zurich on the lines S16 and S33.</string>
+			<key>LatitudeE6</key>
+			<integer>47675791</integer>
+			<key>LongitudeE6</key>
+			<integer>8617916</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.675791,8.617916%20%28Schloss%20Laufen%20am%20Rheinfall%20%29</string>
+			<key>Name</key>
+			<string>Schloss Laufen am Rheinfall </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>47676600</integer>
+			<key>LongitudeE6</key>
+			<integer>8614140</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.676600,8.614140%20%28Train%20station%20-%20Schloss%20Laufen%20am%20Rheinfall%20%29</string>
+			<key>Name</key>
+			<string>Train station - Schloss Laufen am Rheinfall </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>daily 9.00am - 7.30pm,1.5 - 7 hours,Take tram no. 2, 5, 8, 9 or 11 to Buerkliplatz or tram no. 2, 4, 5, 8, 9, 11 or 15 to Bellevue. You can also walk from the main station to the end of the Bahnhofstrasse.</string>
+			<key>LatitudeE6</key>
+			<integer>47366211</integer>
+			<key>LongitudeE6</key>
+			<integer>8540776</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.366211,8.540776%20%28Zurich%20lake%20cruise%20-%20board%20at%20Burkliplatz%20%29</string>
+			<key>Name</key>
+			<string>Zurich lake cruise - board at Burkliplatz </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>maybe another ferry station</string>
+			<key>LatitudeE6</key>
+			<integer>47371036</integer>
+			<key>LongitudeE6</key>
+			<integer>8541956</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.371036,8.541956%20%28Storchen%20%29</string>
+			<key>Name</key>
+			<string>Storchen </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>pay CHF 2 to visit the Karlsturm tower for such a magnificent view.9.00am-6pm (Mon-Sat) </string>
+			<key>LatitudeE6</key>
+			<integer>47369999</integer>
+			<key>LongitudeE6</key>
+			<integer>8544167</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.369999,8.544167%20%28Great%20Church%20%28Grossmunster%29%20%29</string>
+			<key>Name</key>
+			<string>Great Church (Grossmunster) </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>look for tall buildings for city view, former roman custorms post,Lindenhof -- To get here, you must climb narrow medieval alleyways from Fraumunster. Continue north along Schlusselgasse, heading in the direction of the railroad station. Shaded by trees, the belvedere square of Lindenhof is one of the most scenic spots in Zurich, especially romantic at twilight. Once the site of a Celtic and later a Roman fort, Lindenhof is a good place from which to view the Limmat River; the lookout point has a fountain. There is also a good view of the medieval old quarter, which rises in layers on the right bank.From Lindenhof, head down Pfalzgasse, forking left onto Strehlgasse to Waggengasse and Rathausbrucke, the city hall bridge spanning the Limmat. You have arrived at the landmark square</string>
+			<key>LatitudeE6</key>
+			<integer>47372540</integer>
+			<key>LongitudeE6</key>
+			<integer>8540790</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.372540,8.540790%20%28Lindenhof%20%29</string>
+			<key>Name</key>
+			<string>Lindenhof </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>47370746</integer>
+			<key>LongitudeE6</key>
+			<integer>8541203</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.370746,8.541203%20%28chocolates%20%29</string>
+			<key>Name</key>
+			<string>chocolates </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>9am-6pm</string>
+			<key>LatitudeE6</key>
+			<integer>47374243</integer>
+			<key>LongitudeE6</key>
+			<integer>8537660</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.374243,8.537660%20%28department%20store%20-%20chocolate%20%29</string>
+			<key>Name</key>
+			<string>department store - chocolate </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Start: Munsterhof.Finish: Helmhaus.Time: 1 1/2 hours.best time 10-4,Situated on both sides of the Limmat River, Altstadt (Old Town) is known for its squares, narrow cobblestone streets, and winding alleys. There are fountains, medieval houses, art galleries, boutiques, quaint restaurants, hotels (many moderately priced), and antiques shops. To walk its old streets is to follow in the footsteps of such famous figures as Charlemagne, Goethe, Einstein, and Lenin. The oldest houses date from the 1100s.A good place to begin your exploration of Altstadt is the former swine market</string>
+			<key>LatitudeE6</key>
+			<integer>47374102</integer>
+			<key>LongitudeE6</key>
+			<integer>8541226</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.374102,8.541226%20%28Old%20Town%20%28Altstadt%29%20%29</string>
+			<key>Name</key>
+			<string>Old Town (Altstadt) </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Central tram station</string>
+			<key>LatitudeE6</key>
+			<integer>47376837</integer>
+			<key>LongitudeE6</key>
+			<integer>8543903</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.376837,8.543903%20%28Central%20%29</string>
+			<key>Name</key>
+			<string>Central </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>our hotel, 044 360 66 66</string>
+			<key>LatitudeE6</key>
+			<integer>47381104</integer>
+			<key>LongitudeE6</key>
+			<integer>8542556</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.381104,8.542556%20%28Hotel%20Continental%20Zurich%20-%20mgallery%20collection%20%29</string>
+			<key>Name</key>
+			<string>Hotel Continental Zurich - mgallery collection </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>take train from zurich HB</string>
+			<key>LatitudeE6</key>
+			<integer>47450400</integer>
+			<key>LongitudeE6</key>
+			<integer>8561900</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=47.450400,8.561900%20%28Zurich%20Airport%20%29</string>
+			<key>Name</key>
+			<string>Zurich Airport </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

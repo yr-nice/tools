@@ -1,0 +1,36 @@
+insert into WISH_LIST(WISH_ITEM) values ('24 Monitor')
+select * from wish_list
+
+CREATE TABLE WISH_LIST  
+  (WISH_ID INT NOT NULL GENERATED ALWAYS AS IDENTITY CONSTRAINT WISH_PK PRIMARY KEY,  
+     ENTRY_DATE TIMESTAMP DEFAULT CURRENT_TIMESTAMP, 
+     WISH_ITEM VARCHAR(32) NOT NULL) 
+     
+create table elements
+( id int not null generated always as identity,
+  name varchar(128) not null,
+  table_name varchar(128) not null,
+  columns varchar(10240) not null,
+  timestamp timestamp default current_timestamp)
+  
+insert into elements( name,  table_name,  columns)
+ values ('test words', 'table_words', 'id, word, phonetic, translation, example, tags, rank, image, remarks, related, extended, timestamp')
+
+id, word, phonetic, translation, example, tags, rank, image, remarks, related, extended, timestamp 
+
+create table words
+( id int not null generated always as identity,
+  word varchar(256) not null,
+  phonetic varchar(256),
+  trans varchar(1024),
+  example varchar(10240),
+  tags int,
+  rank int,
+  image varchar(256),
+  remarks varchar(10240),
+  related varchar(1024),
+  timestamp timestamp default current_timestamp)
+  
+alter table words alter column tags varchar(1024)
+  
+ 

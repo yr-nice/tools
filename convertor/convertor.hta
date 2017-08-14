@@ -1,0 +1,303 @@
+<HTA:APPLICATION
+     ID="convertor"
+     APPLICATIONNAME="ConvertorTest"
+     SCROLL="no"
+     SINGLEINSTANCE="yes"
+     #CAPTION="no"
+     #BORDER="none"
+     #CONTEXTMENU="no"
+     INNERBORDER="no"
+     #ICON="C:\Program Files\Microsoft Office\OFFICE11\MSN.ICO"
+     #SELECTION="no"
+     SHOWINTASKBAR="yes"
+/>
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>ConvertorTest</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=GBK">
+<link type=text/css rel=stylesheet href="./convertor.css">
+
+<script type="text/javascript" src="./dojo/dojo.js"></script>
+<script type="text/javascript"  src="./dateFormat.js"></script>
+<script type="text/javascript"  src="./convertor.js"></script>
+<script type="text/javascript"  src="./stoCount.js"></script>
+<script type="text/javascript"  src="./sto-trade.js"></script>
+<script type="text/javascript"  src="./sto-trade-page.js"></script>
+<script type="text/javascript"  src="./sto-io.js"></script>
+<script type="text/javascript"  src="./sto-gets.js"></script>
+<script type="text/javascript" src="./pmjslib.js"></script>
+
+</HEAD>
+
+<BODY onload="init()">
+
+<div id="tabContainer"></div>
+<div id=contain>
+<div id=mainbg>
+<div id=left>
+<table class=tb cellSpacing=1 borderColorDark=#ffffff cellPadding=2 width=500 align=center bgColor=#cccccc border=0>
+  <tbody>
+  <tr bgColor=#e9f8d7>
+    <td align=middle height=26><STRONG>面积计量单位换算器</STRONG></td>
+</tr>
+  <tr bgColor=#ffffff>
+    <td>
+      <table class=tb cellSpacing=0 cellPadding=4 width=650>
+        <tbody>
+        <form action="">
+        <tr height=10>
+          <td>Total:</td><td><input size=15 name="mSquare_totalPrice"> k</td>
+          <td colSpan=4></td>
+        </tr>
+        <tr>
+          <td noWrap align=right>平方英尺<BR><FONT style="FONT-SIZE: 9px">(sq
+            ft)</FONT></td>
+          <td align=left><input size=15 name=engSquare_foot> $<input size=8 name=engSquare_foot_price></td>
+          <td align=left><input onclick="if (checkNum(engSquare_foot.value)) compute(this.form,engSquare_foot.name,area_data)" type=button value=换算 name=engSquare_foot_bt></td>
+          <td noWrap align=right>平方米<FONT
+            style="FONT-SIZE: 9px">(m<SUP>2</SUP>)</FONT></td>
+          <td align=left><input size=15 name=mSquare_meter> $<input size=8 name=mSquare_meter_price></td>
+          <td align=left><input onclick="if (checkNum(mSquare_meter.value)) compute(this.form,mSquare_meter.name,area_data)" type=button value=换算 name=mSquare_meter_bt></td>
+        </tr>
+        <tr>
+          <td noWrap align=right>平方公里<BR><FONT style="FONT-SIZE: 9px">(km<SUP>2</SUP>)</FONT></td>
+          <td align=left><input size=15 name=mSquare_kilometer> $<input size=8 name=mSquare_kilometer_price></td>
+          <td align=left><input onclick="if (checkNum(mSquare_kilometer.value)) compute(this.form,mSquare_kilometer.name,area_data)" type=button value=换算 name=mSquare_kilometer_bt></td>
+          <td noWrap align=right>公顷<FONT style="FONT-SIZE: 9px">(ha)</FONT></td>
+          <td align=left><input size=15 name=mHectare> $<input size=8 name=mHectare_price></td>
+          <td align=left><input onclick="if (checkNum(mHectare.value)) compute(this.form,mHectare.name,area_data)" type=button value=换算 name=mHectare_bt></td>
+          </tr>
+        <tr>
+          <td noWrap align=right>平方分米<BR><FONT
+            style="FONT-SIZE: 9px">(dm<SUP>2</SUP>)</FONT></td>
+          <td align=left><input size=15 name=mSquare_decimeter> $<input size=8 name=mSquare_decimeter_price></td>
+          <td align=left><input onclick="if (checkNum(mSquare_decimeter.value)) compute(this.form,mSquare_decimeter.name,area_data)" type=button value=换算 name=mSquare_decimeter_bt></td>
+          <td noWrap align=right>平方厘米<BR><FONT
+            style="FONT-SIZE: 9px">(cm<SUP>2</SUP>)</FONT></td>
+          <td align=left><input size=15 name=mSquare_centimeter> $<input size=8 name=mSquare_centimeter_price></td>
+          <td align=left><input onclick="if (checkNum(mSquare_centimeter.value)) compute(this.form,mSquare_centimeter.name,area_data)" type=button value=换算 name=mSquare_centimeter_bt></td>
+</tr>
+        <tr>
+          <td noWrap align=right>平方毫米<BR><FONT
+            style="FONT-SIZE: 9px">(mm<SUP>2</SUP>)</FONT></td>
+          <td align=left><input size=15 name=mSquare_millimeter> $<input size=8 name=mSquare_millimeter_price></td>
+          <td align=left><input onclick="if (checkNum(mSquare_millimeter.value)) compute(this.form,mSquare_millimeter.name,area_data)" type=button value=换算 name=mSquare_millimeter_bt></td>
+          <td noWrap align=right>平方英里<BR><FONT style="FONT-SIZE: 9px">(sq
+            mi)</FONT></td>
+          <td align=left><input size=15 name=engSquare_mile> $<input size=8 name=engSquare_mile_price></td>
+          <td align=left><input onclick="if (checkNum(engSquare_mile.value)) compute(this.form,engSquare_mile.name,area_data)" type=button value=换算 name=engSquare_mile_bt></td>
+</tr>
+        <tr>
+          <td noWrap align=right>英亩</td>
+          <td align=left><input size=15 name=engAcre> $<input size=8 name=engAcre_price></td>
+          <td align=left><input onclick="if (checkNum(engAcre.value)) compute(this.form,engAcre.name,area_data)" type=button value=换算 name=engAcre_bt></td>
+          <td noWrap align=right>平方竿<BR><FONT style="FONT-SIZE: 9px">(sq
+            rd)</FONT></td>
+          <td align=left><input size=15 name=usSquare_rod> $<input size=8 name=usSquare_rod_price></td>
+          <td align=left><input onclick="if (checkNum(usSquare_rod.value)) compute(this.form,usSquare_rod.name,area_data)" type=button value=换算 name=usSquare_rod_bt></td>
+</tr>
+        <tr>
+		  <td noWrap align=right>市亩</td>
+		  <td align=left><input size=15 name=mAre> $<input size=8 name=mAre_price></td>
+		  <td align=left><input onclick="if (checkNum(mAre.value)) compute(this.form,mAre.name,area_data)" type=button value=换算 name=mAre_bt></td>
+          <td noWrap align=right>平方码<BR><FONT style="FONT-SIZE: 9px">(sq
+            yd)</FONT></td>
+          <td align=left><input size=15 name=engSquare_yard> $<input size=8 name=engSquare_yard_price></td>
+          <td align=left><input onclick="if (checkNum(engSquare_yard.value)) compute(this.form,engSquare_yard.name,area_data)" type=button value=换算 name=engSquare_yard_bt></td>
+</tr>
+        <tr>
+          <td noWrap align=right>平方英寸<BR><FONT style="FONT-SIZE: 9px">(sq
+            in)</FONT></td>
+          <td align=left><input size=15 name=engSquare_inch> $<input size=8 name=engSquare_inch_price></td>
+          <td align=left><input onclick="if (checkNum(engSquare_inch.value)) compute(this.form,engSquare_inch.name,area_data)" type=button value=换算 name=engSquare_inch_bt></td>
+          <td colSpan=3>
+            <div align=right><input onclick=resetAll(this.form) type=button value=数据重置 name=res7></div></td>
+</tr>
+        <tr height=10>
+          <td
+colSpan=6></td>
+</tr></form></tbody></table></td>
+</tr></tbody></table>
+</div>
+</div>
+
+<!--  BMI -->
+<div id="bmiContainer">
+<form>
+<div>BMI</div>
+<table>
+  <tr>
+     <td>Height: &nbsp;&nbsp;&nbsp;<input name=height onblur="bmiBlur(this)"/> m</td>
+     <td>Weight: &nbsp;&nbsp;&nbsp;<input name=weight onblur="bmiBlur(this)"/> Kg</td>
+     <td>BMI:&nbsp;&nbsp;&nbsp;<input name=bmi onblur="bmiBlur(this)"/></td>
+  </tr>
+</table>
+<input type=button onclick="countBMI(this.form)" value="Count"/>&nbsp;<input type=button onclick="clearBMI(this.form)" value="Clear"/>
+</form>
+</div>
+
+
+<!--  Stock -->
+<div id="stockContainer">
+<form>
+<div>Stock</div>
+<input type=button onclick="newStockTrade(1)" value="Create"/>
+<input type=button onclick="removeStockRow()" value="Remove"/>
+<input type=button onclick="saveSto()" value="Save"/>
+<input type=button onclick="sortStoTrade('name', 'up')" value="Sort"/>
+<input type=button onclick="toggleStoTradeTbl()" value="Toggle"/>
+<input type=button onclick="ConfigSto()" value="Config"/>
+<input type=button onclick="tryShowText()" value="Test"/>
+<div id=pages>
+	<a onclick="movePage(-1)">&lt;&lt;&nbsp;</a>
+	<span id=curPage></span>
+	<a onclick="movePage(1)">&nbsp;&nbsp;&gt;&gt;&nbsp;&nbsp;&nbsp;</a>
+	 Total: <span id=totalPages></span>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<span><input id=tradesPerPage size=1 onblur="updateTradesPerPage()"> per page</span>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<select onchange="changeCurPriceOption(this)">
+		<option value="all">ALL</option>
+		<option value="buy">Buy</option>
+		<option value="sell">Sell</option>
+		<option value="none">None</option>
+	</select>
+</div>
+
+<div id=stoFilter>
+    <select id=stoFilterName onchange=changeFilterName(this)>
+	  <option value="all">Show All</option>
+	  <option value="kinds">All Kinds</option>
+	  <option value="name">By Name</option>
+	  <option value="action">By Action</option>
+	  <option value="date">By Date</option>
+	  <option value="selected">Selected</option>
+	  <option value="unselected">Unselected</option>
+    </select>
+    <select id=subFilter onchange=filterStoTrade(this)></select>
+    <span id=inputFilter style="display:none">
+      <span id=dateFilter><input /> to <input /><button onclick="filteDate()">Filte</button></span>
+      <span id=statusFilter><input /></span>
+    </span>
+</div>
+
+<table id="stockTbl" style="border: 1px solid" ondblclick="tryShowText()">
+<tHead style="font-weight:bold">
+</tHead>
+  <tr style="font-weight:bold; cursor:pointer;">
+  	<td><input type=checkbox onclick="toggleStoTradeSelection(this.checked)"></td>
+  	<td>Name</td>
+  	<td>Action</td>
+  	<td>Shares No</td>
+  	<td>Price</td>
+  	<td>Broker</td>
+  	<td>Broker Fee</td>
+  	<td>Amount</td>
+  	<td>Break Even</td>
+  	<td>Cur Price</td>
+  	<td>Mkt Value</td>
+  	<td>Change</td>
+  	<td>Date</td>
+  </tr>
+</table>
+<input type=button onclick="countAllStock()" value="Count"/>
+<input type=button onclick="recountAllStockRlt()" value="Recount"/>
+<input type=button onclick="countSelectStockRlt()" value="Count Selected"/>
+<input type=button onclick="clearStockRlt()" value="Clear"/>
+<input type=button onclick="countWay2()" value="Test"/>
+<input type=checkbox id="fixPreTrd" value="Fix Pre Trades"/>
+
+<table id="stockRstTbl" style="border: 1px solid; display:none; width:900px;" ondblclick="toggleRltTgt()">
+<tHead style="font-weight:bold"></tHead>
+  <tr style="font-weight:bold">
+  	<td width=80px >Name</td>
+  	<td>Buy No</td>
+  	<td>Sell No</td>
+  	<td>Hold No</td>
+  	<td>Buy Amount</td>
+  	<td>Sell Amount</td>
+  	<td>Balance</td>
+  	<td>Ave Buy Price</td>
+  	<td>Ave Sell Price</td>
+  	<td>Broker Fee</td>
+  	<td>Break Even</td>
+  	<td>Cur Profit</td>
+  	<td>Cur Price</td>
+  	<td>Mkt Value</td>
+  	<td>Change</td>
+  	<td>Tgt Profit</td>
+  	<td>Tgt %</td>
+  	<td>Tgt Price</td>
+  	<td></td>
+  </tr>
+</table>
+
+
+
+
+
+
+
+
+<div style="display:none;">
+<table style="display:none;">
+  <tr>
+     <td>No. of Shares</td>
+     <td><input name=noShare value=1000 onblur=""/></td>
+     <td>Broker</td>
+     <td><select id=broker><option value=ocbc>iOCBC</option></select></td>
+  </tr>
+</table>
+<div style="float:left;">
+	<table>
+	  <tr>
+		 <td colspan=2><b>Buy</td>
+	  </tr>
+	  <tr>
+	  	<td>Buy Price</td><td><input name=buyPrice ></td>
+	  </tr>
+	  <tr>
+	   	<td>Broker Fee</td><td id=brokerFee></td>
+	  </tr>
+	  <tr>
+	   	<td>Purchase Amount</td><td><input name=purAmount ></td>
+	  </tr>
+	  <tr>
+	   	<td>Break Even</td><td id=breakEven></td>
+	  </tr>
+	</table>
+</div>
+<div>
+	<table>
+	  <tr>
+	     <td colspan=2><b>Sell</td>
+	  </tr>
+	  <tr>
+	  	<td>Sell Price</td><td><input name=sellPrice ></td>
+	  </tr>
+	  <tr>
+	   	<td>Broker Fee</td><td id=sellBrokerFee></td>
+	  </tr>
+	  <tr>
+	   	<td>Sales Amount</td><td><input name=salAmount ></td>
+	  </tr>
+	  <tr>
+	   	<td>Profit</td><td id=profit></td>
+	  </tr>
+	</table>
+</div>
+<br>
+<input type=button onclick="countStock(this.form)" value="Count"/>&nbsp;<input type=button onclick="clearStock(this.form)" value="Clear"/>
+<input type=button onclick="test(this.form)" value="Test"/>
+</form>
+</div>
+
+</div>
+
+
+
+</div>
+
+
+</BODY></HTML>

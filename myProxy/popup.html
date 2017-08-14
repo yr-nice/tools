@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="popup.css" />
+        <script src="jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <div class="base" tabindex="0">
+            <div id="error_msg">Error: Account requires confirmation.</div>
+            <div id="setup_expand" class="menu">
+                <div class="img" style="background:url(img/icons/select.png)"></div>
+                <div class="label">Setup Proxy Server</div>
+                <div class="key">Ctrl+Shift+P</div>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+            <div id="setup_holder" class="holder" style="display: none;">
+                <div id="setup_servers"></div>
+                <div class="server-type-info">
+                    <div style="background:url(img/icons/anonymous.png);"></div>
+                    <span>Anonymity: Change your IP address to hide your identity</span><br /><span class="left">on web.</span>
+                </div>
+                <div class="server-type-info">
+                    <div style="background:url(img/icons/bypass.png);"></div>
+                    <span>Bypassing a Firewall: Help you browse the web that</span><br /><span class="left">firewall blocks.</span>
+                </div>
+            </div>
+            <div id="enable_menu" class="menu">
+                <div class="img" style="background:url(img/icons/enable.png)"></div>
+                <div class="label">Enable Proxy Server</div>
+                <div class="key">Ctrl+Shift+E</div>
+            </div>
+            <div id="disable_menu" class="menu">
+                <div class="img" style="background:url(img/icons/disable.png)"></div>
+                <div class="label">Disable Proxy Server</div>
+                <div class="key">Ctrl+Shift+D</div>
+            </div>
+            <div id="import_expand" class="menu">
+                <div class="img" style="background:url(img/icons/import.png)"></div>
+                <div class="label">Import Proxy List</div>
+                <div class="key">Ctrl+Shift+I</div>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+            <div id="import_holder" class="holder" style="display: none;">
+                <div id="import_margins">
+                    <div id="import_data">
+                        <div>
+                            <textarea id="import_proxies" placeholder="Proxy servers from import file"></textarea>
+                        </div>
+                        <div id="import_submit">
+                            <div id="import_save" class="button">Save</div>
+                            <div id="import_from" class="button">Import File</div>
+                            <div id="import_cancel" class="button">Cancel</div>
+                        </div>
+                    </div>
+                    <div id="import_load">
+                    </div>
+                </div>
+            </div>
+            <div id="captcha_expand" class="menu">
+                <div class="img" style="background:url(img/icons/download.png)"></div>
+                <div class="label">Download Proxy List</div>
+                <div class="key">Ctrl+Shift+S</div>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+            <div id="captcha_holder" class="holder" style="display: none;">
+                <div id="captcha_margins">
+                    <div id="captcha_data">
+                        <div id="captcha_placeholder"><img id="captcha_image" /></div>
+                        <div id="captcha_input"><input id="captcha_response" type="text" placeholder="Enter Captcha here" /></div>
+                        <div id="captcha_buttons"><div id="captcha_submit" class="button">Submit</div><div id="captcha_reset" class="button">Reset</div></div>
+                    </div>
+                    <div id="captcha_load">
+                    </div>
+                </div>
+            </div>
+            <div id="remove_expand" class="menu">
+                <div class="img" style="background:url(img/icons/rem-captcha.png)"></div>
+                <div class="label">Remove Captcha</div>
+                <div class="key">Ctrl+Shift+R</div>
+                <div class="arrow-up"></div>
+                <div class="arrow-down"></div>
+            </div>
+            <div id="remove_holder" class="holder" style="display: none;">
+                <div id="remove_data">
+                    <div id="remove_fields">
+                        <div class="remove_label">Email: </div>
+                        <div class="remove_block">
+                            <div class="remove_img" style="background-image:url(img/icons/email.png)"></div>
+                            <input class="remove_field" id="username" type="text" placeholder="Enter your email" />
+                        </div>
+                        <div class="remove_label">Password: </div>
+                        <div class="remove_block">
+                            <div class="remove_img" style="background-image:url(img/icons/pass.png)"></div>
+                            <input class="remove_field" id="password" type="password" placeholder="Enter your password" />
+                        </div>
+                    </div>
+                    <div id="remove_buttons">
+                        <div id="remove_submit" class="button">Save</div>
+                        <div id="remove_register" class="button">Register</div>
+                    </div>
+                </div>
+                <div id="remove_load">
+                </div>
+            </div>
+            <div id="step_by_step_menu" class="menu">
+                <div class="img" style="background:url(img/icons/step-by-step.png)"></div>
+                <div class="label">Step-by-step Guide</div>
+                <div class="key">Ctrl+Shift+G</div>
+            </div>
+            <div id="test_menu" class="menu">
+                <div class="img" style="background:url(img/icons/enable.png)"></div>
+                <div class="label">Give me a Proxy</div>
+                <div class="key">Ctrl+Shift+T</div>
+            </div>
+            <div id="test2_menu" class="menu">
+                <div class="img" style="background:url(img/icons/enable.png)"></div>
+                <div class="label">Test2</div>
+                <div class="key">Ctrl+Shift+T</div>
+            </div>
+
+        </div>
+        <script src="popup.js"></script>
+    </body>
+</html>

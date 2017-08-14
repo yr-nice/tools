@@ -1,0 +1,569 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bookmarks</key>
+	<array>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Via Giovanni Amendola, 77, 00185 Roma, Rom (Latium), Italy,  1100 or 1800, 3 Oct, Sat, </string>
+			<key>LatitudeE6</key>
+			<integer>41901375</integer>
+			<key>LongitudeE6</key>
+			<integer>12501165</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.901375,12.501165%20%28Train%20station%20-%20Arrive%20%29</string>
+			<key>Name</key>
+			<string>Train station - Arrive </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>00184 Rome, Italy, 39 0677591793, Walk 50 metres, go to bus terminal TERMINI (MA-MB-FS). Take the bus line No. 714 ( PALAZZO SPORT /PIAZZALE NERVI) for 7 stops - (714 runs every 7 min). Get off at the stop AMBA ARADAM/VILLA FONSECA. Walk 200 metres  to Via dei Valeri,1.</string>
+			<key>LatitudeE6</key>
+			<integer>41883164</integer>
+			<key>LongitudeE6</key>
+			<integer>12499328</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.883164,12.499328%20%28Hotel%20-%20Via%20dei%20Valeri%201%20%29</string>
+			<key>Name</key>
+			<string>Hotel - Via dei Valeri 1 </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Open: 0900 to 1800, Full ticket - $15.50 </string>
+			<key>LatitudeE6</key>
+			<integer>41891113</integer>
+			<key>LongitudeE6</key>
+			<integer>12491391</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.891113,12.491391%20%28Colosseo%20%29</string>
+			<key>Name</key>
+			<string>Colosseo </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>The gate of victory</string>
+			<key>LatitudeE6</key>
+			<integer>41889755</integer>
+			<key>LongitudeE6</key>
+			<integer>12490640</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.889755,12.490640%20%28Arco%20di%20Costantino%20%29</string>
+			<key>Name</key>
+			<string>Arco di Costantino </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Center of antique roma, now is just remains</string>
+			<key>LatitudeE6</key>
+			<integer>41891713</integer>
+			<key>LongitudeE6</key>
+			<integer>12486512</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.891713,12.486512%20%28Roman%20Forum%20%29</string>
+			<key>Name</key>
+			<string>Roman Forum </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Square designed by Michelangelo </string>
+			<key>LatitudeE6</key>
+			<integer>41893389</integer>
+			<key>LongitudeE6</key>
+			<integer>12483017</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.893389,12.483017%20%28Piazza%20del%20Campidoglio%20%29</string>
+			<key>Name</key>
+			<string>Piazza del Campidoglio </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string> or Altare della Patria (Altar of the Fatherland) or Il Vittoriano. Known by the locals as the wedding ...</string>
+			<key>LatitudeE6</key>
+			<integer>41895226</integer>
+			<key>LongitudeE6</key>
+			<integer>12482741</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.895226,12.482741%20%28National%20Monument%20of%20Victor%20Emmanuel%20II%20%29</string>
+			<key>Name</key>
+			<string>National Monument of Victor Emmanuel II </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Column</string>
+			<key>LatitudeE6</key>
+			<integer>41895799</integer>
+			<key>LongitudeE6</key>
+			<integer>12484280</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.895799,12.484280%20%28Foro%20di%20Traiano%20%29</string>
+			<key>Name</key>
+			<string>Foro di Traiano </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Small museum with famous collections</string>
+			<key>LatitudeE6</key>
+			<integer>41914054</integer>
+			<key>LongitudeE6</key>
+			<integer>12492034</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.914054,12.492034%20%28Galleria%20Borghese%20%29</string>
+			<key>Name</key>
+			<string>Galleria Borghese </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Garden in the city. better to visit during sunset</string>
+			<key>LatitudeE6</key>
+			<integer>41911260</integer>
+			<key>LongitudeE6</key>
+			<integer>12479578</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.911260,12.479578%20%28Pincio%20%29</string>
+			<key>Name</key>
+			<string>Pincio </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Famous church in people square</string>
+			<key>LatitudeE6</key>
+			<integer>41911300</integer>
+			<key>LongitudeE6</key>
+			<integer>12476016</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.911300,12.476016%20%28Santa%20Maria%20del%20Popolo%20%29</string>
+			<key>Name</key>
+			<string>Santa Maria del Popolo </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Can go to Piazza del Popolo via Pincio garden, which has a beautiful view of Roma</string>
+			<key>LatitudeE6</key>
+			<integer>41905798</integer>
+			<key>LongitudeE6</key>
+			<integer>12482141</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.905798,12.482141%20%28Spanish%20Steps%20%29</string>
+			<key>Name</key>
+			<string>Spanish Steps </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Most famous fountain in Roma, let your wish come true.</string>
+			<key>LatitudeE6</key>
+			<integer>41900852</integer>
+			<key>LongitudeE6</key>
+			<integer>12483339</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.900852,12.483339%20%28Trevi%20Fountain%20%29</string>
+			<key>Name</key>
+			<string>Trevi Fountain </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Famous church and near hotel</string>
+			<key>LatitudeE6</key>
+			<integer>41885982</integer>
+			<key>LongitudeE6</key>
+			<integer>12506392</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.885982,12.506392%20%28Basilica%20of%20St%20John%20Lateran%20%29</string>
+			<key>Name</key>
+			<string>Basilica of St John Lateran </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Flower square, open market </string>
+			<key>LatitudeE6</key>
+			<integer>41895621</integer>
+			<key>LongitudeE6</key>
+			<integer>12472181</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.895621,12.472181%20%28Campo%20dei%20Fiori%20%29</string>
+			<key>Name</key>
+			<string>Campo dei Fiori </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Three famous funtains</string>
+			<key>LatitudeE6</key>
+			<integer>41898835</integer>
+			<key>LongitudeE6</key>
+			<integer>12473098</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.898835,12.473098%20%28Piazza%20Navona%20%29</string>
+			<key>Name</key>
+			<string>Piazza Navona </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Opening hours: Mon - Sat: 9 am - 6.30 pm and Sun: 9 am - 1 pm. Tel: +39 06 68300230. Free </string>
+			<key>LatitudeE6</key>
+			<integer>41898851</integer>
+			<key>LongitudeE6</key>
+			<integer>12476767</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.898851,12.476767%20%28Pantheon%20%29</string>
+			<key>Name</key>
+			<string>Pantheon </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>open: 0800 to 1900</string>
+			<key>LatitudeE6</key>
+			<integer>41898005</integer>
+			<key>LongitudeE6</key>
+			<integer>12477947</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.898005,12.477947%20%28Santa%20Maria%20Sopra%20Minerva%20%29</string>
+			<key>Name</key>
+			<string>Santa Maria Sopra Minerva </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>One of most beautiful piazza in Roma, look like Traiana </string>
+			<key>LatitudeE6</key>
+			<integer>41900920</integer>
+			<key>LongitudeE6</key>
+			<integer>12480029</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.900920,12.480029%20%28Piazza%20Colonna%20%29</string>
+			<key>Name</key>
+			<string>Piazza Colonna </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Bus stop to go to villa dEste</string>
+			<key>LatitudeE6</key>
+			<integer>41920249</integer>
+			<key>LongitudeE6</key>
+			<integer>12565784</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.920249,12.565784%20%28Ponte%20Mammolo%20%29</string>
+			<key>Name</key>
+			<string>Ponte Mammolo </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Tivoli Bus station</string>
+			<key>LatitudeE6</key>
+			<integer>41959894</integer>
+			<key>LongitudeE6</key>
+			<integer>12797541</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.959894,12.797541%20%28Tivoli%20Bus%20station%20%29</string>
+			<key>Name</key>
+			<string>Tivoli Bus station </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Beautiful funtains. By train:Roma-Pescara Line, Stazione Tivoli; By bus:Bus Lines Cotral Roma-Tivoli (station in Rome: metro stop Ponte Mammolo; bus station in Tivoli: Largo Nazioni Unite).  Open: 0800 to 1830, close in monday, 5 Oct</string>
+			<key>LatitudeE6</key>
+			<integer>41962390</integer>
+			<key>LongitudeE6</key>
+			<integer>12796695</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.962390,12.796695%20%28Villa%20d%27Este%20%29</string>
+			<key>Name</key>
+			<string>Villa d'Este </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Visit at 5 Oct morning. Opening hour, 0900 to 1800, closed on 4 Oct, sunday. Route: Metro Line A, Direction Battistini, Stations: Ottaviano - S.Pietro-Musei Vaticani; Cipro (from botl stations 10 minutes walk).</string>
+			<key>LatitudeE6</key>
+			<integer>41906882</integer>
+			<key>LongitudeE6</key>
+			<integer>12453805</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.906882,12.453805%20%28Vatican%20Museum%20Entrance%20%29</string>
+			<key>Name</key>
+			<string>Vatican Museum Entrance </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>San Pietro is free, but to enter Cupola need to pay. Open hour, 0800 to 1645</string>
+			<key>LatitudeE6</key>
+			<integer>41902389</integer>
+			<key>LongitudeE6</key>
+			<integer>12453260</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.902389,12.453260%20%28San%20Pietro%20Cupola%20%29</string>
+			<key>Name</key>
+			<string>San Pietro Cupola </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Big square</string>
+			<key>LatitudeE6</key>
+			<integer>41902287</integer>
+			<key>LongitudeE6</key>
+			<integer>12456528</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.902287,12.456528%20%28Piazza%20San%20Pietro%20%29</string>
+			<key>Name</key>
+			<string>Piazza San Pietro </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>bridge with angels</string>
+			<key>LatitudeE6</key>
+			<integer>41901763</integer>
+			<key>LongitudeE6</key>
+			<integer>12466459</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.901763,12.466459%20%28Ponte%20Sant%27Angelo%20%29</string>
+			<key>Name</key>
+			<string>Ponte Sant'Angelo </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>bocca della verita. The mouth that would cut your hand if you are not honest</string>
+			<key>LatitudeE6</key>
+			<integer>41888147</integer>
+			<key>LongitudeE6</key>
+			<integer>12481357</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.888147,12.481357%20%28Bocca%20della%20verita%20%29</string>
+			<key>Name</key>
+			<string>Bocca della verita </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Tiburtina, 2236, 5 Oct, train 774, Bed22.26</string>
+			<key>LatitudeE6</key>
+			<integer>41910964</integer>
+			<key>LongitudeE6</key>
+			<integer>12529285</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=41.910964,12.529285%20%28Train%20station%20-%20Depart%20%29</string>
+			<key>Name</key>
+			<string>Train station - Depart </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

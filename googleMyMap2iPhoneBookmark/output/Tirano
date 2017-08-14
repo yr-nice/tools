@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bookmarks</key>
+	<array>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Take the tunnel under the train station and get off on the back: here you can find the bus station. Every train arriving from Milano there\x26apos;s a bus leaving from Tirano: buy the ticket to Grosio.They are at 13.15 - 15.10 - 17.05 - 19.05 -  21.00 -  22.00 (THE LAST BUS)</string>
+			<key>LatitudeE6</key>
+			<integer>46215141</integer>
+			<key>LongitudeE6</key>
+			<integer>10166753</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.215141,10.166753%20%28Tirano%20%29</string>
+			<key>Name</key>
+			<string>Tirano </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hotel, 7 Oct afternoon to 8 Oct morning</string>
+			<key>LatitudeE6</key>
+			<integer>46297766</integer>
+			<key>LongitudeE6</key>
+			<integer>10274072</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.297766,10.274072%20%28Sassella%20%29</string>
+			<key>Name</key>
+			<string>Sassella </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>cycling road</string>
+			<key>LatitudeE6</key>
+			<integer>46297529</integer>
+			<key>LongitudeE6</key>
+			<integer>10265513</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.297529,10.265513%20%28Ravoledo%20%29</string>
+			<key>Name</key>
+			<string>Ravoledo </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>cycling road</string>
+			<key>LatitudeE6</key>
+			<integer>46316821</integer>
+			<key>LongitudeE6</key>
+			<integer>10249729</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.316821,10.249729%20%28Fusino%20%29</string>
+			<key>Name</key>
+			<string>Fusino </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>cycling road</string>
+			<key>LatitudeE6</key>
+			<integer>46329387</integer>
+			<key>LongitudeE6</key>
+			<integer>10247154</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.329387,10.247154%20%28Small%20lake%20%29</string>
+			<key>Name</key>
+			<string>Small lake </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

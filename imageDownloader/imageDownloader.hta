@@ -1,0 +1,355 @@
+<html>
+<head>
+  <title>Image Collector</title>
+  <script type="text/javascript" src="./prototype.js"></script>
+  <script type="text/javascript" src="./dateFormat.js"></script>
+  <script type="text/javascript" src="./pmjslib.js"></script>
+  <script type="text/javascript" src="./config.js"></script>
+
+  <script>
+	var fso, gResp;
+	var ForReading = 1, ForWriting = 2, ForAppending=8;
+	var urlArr = [];
+	var urlMap = {};
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+
+	function postRequest()
+	{
+		var url = document.getElementById("url_input").value;
+		alert(url)
+		new Ajax.Request(url,
+		{
+			method: 'get',
+			asynchronous: true,
+			onComplete: function(transport)
+			{
+				alert(transport.responseText)
+				document.getElementById("response_txt").value = transport.responseText;
+			},
+			onFailure: function()
+			{
+				document.getElementById("response_txt").value = "Failed";
+			}
+		})
+	}
+
+	function getResp(url)
+	{
+		//alert(url)
+		gResp = "";
+		new Ajax.Request(url,
+		{
+			method: 'get',
+			asynchronous: false,
+			onComplete: function(transport)
+			{
+				document.getElementById("response_txt").value = transport.responseText;
+				gResp = transport.responseText;
+			},
+			onFailure: function()
+			{
+				document.getElementById("response_txt").value = "Failed";
+			}
+		})
+
+		return gResp;
+	}
+
+	function testRegex()
+	{
+		var resp = document.getElementById("response_txt").value;
+		//var pattern = document.getElementById("regex_input").value;
+		eval("var pattern = "+document.getElementById("regex_input").value);
+		//alert(pattern);
+		var arr = minMatch(resp, pattern);
+		var str = ""
+		if(!arr || arr.length<1)
+			document.getElementById("regex_txt").value="Not Match!";
+		else
+		{
+			for(var i=0; i<arr.length; i++ )
+				str += i+":"+arr[i] + "\n"
+			document.getElementById("regex_txt").value=str;
+		}
+
+
+	}
+
+	function testRegexArr()
+	{
+		var resp = document.getElementById("response_txt").value;
+		//var pattern = document.getElementById("regex_input").value;
+		eval("var pattern = "+document.getElementById("regex_input").value);
+		//alert(pattern);
+		var arr = minMatchArr(resp, pattern);
+		var str = ""
+		if(!arr || arr.length<1)
+			document.getElementById("regex_txt").value="Not Match!";
+		else
+		{
+			for(var i=0; i<arr.length; i++ )
+			{
+				for(var j=0; j<arr[i].length; j++)
+				str += i+">>>> "+j+":"+arr[i][j] + "\n"
+			}
+			document.getElementById("regex_txt").value=str;
+		}
+	}
+
+	function readFile(path)
+	{
+		var f = fso.OpenTextFile(path, ForReading);
+		return f.ReadAll();
+	}
+	function writeFile(content, path)
+	{
+		var f = fso.OpenTextFile(path, ForWriting, true);
+		//alert(content);
+		f.Write(content);
+		f.Close();
+		//alert("Done!!"+path);
+
+	}
+
+	function constructURLArr(resp)
+	{
+		var re = [];
+		//var arr = minMatchArr(resp, /imgurl.x3d(http.*).x26/i);
+		var arrTmp = minMatch(resp, /dyn.setResults\((.*\]\])\)/i);
+
+		var str = ""
+		if(!arrTmp|| arrTmp.length<1)
+		{
+			alert(urlArr.length + " url have been collected.");
+			return null;
+		}
+
+
+		//else if(!descArr || descArr.length != arr.length)
+		//	alert("Description is not complete! " + descArr.length +", "+ arr.length)
+		else
+		{
+			eval("var arr="+removeNoneAsc(arrTmp[1]));
+			updateStatus(arr.length);
+
+			for(var i=0; i<arr.length; i++ )
+			{
+				var a = arr[i]
+				var url = "";
+				if(gThumbnail)
+					url = a[14]+"?q=tbn:"+a[2]+a[3]
+				else
+					url = a[3]
+
+				if(isDuplicated(url, urlArr))
+					continue;
+
+				/*for(var j=0; j<arr[i].length; j++)
+					str += i+">>>> "+j+":"+arr[i][j] + "\n"*/
+				var ar = []
+				ar[0] = a[14]+"?q=tbn:"+a[2]+a[3];
+				ar[1] = url;
+				re.push(ar);
+			}
+			document.getElementById("regex_txt").value=str;
+		}
+
+		return re;
+
+	}
+
+	function removeNoneAsc(val)
+	{
+		var out = "";
+		for(var a=0; a<val.length; a++)
+		{
+			if(val.charCodeAt(a)<128)
+				out+=val.charAt(a);
+		}
+		updateStatus(out);
+		return out;
+
+	}
+
+
+	function arr2Str(arr)
+	{
+		var re = "";
+		if(gShowTbn)
+			for(var i=0; i<arr.length; i++)
+				re += "<a href="+arr[i][1]+" >" + "<img src=" + arr[i][0] + " ></a>\n"
+
+		else
+			for(var i=0; i<arr.length; i++)
+				re += "<a href="+arr[i][1]+" >" + arr[i][1] + "</a><br>\n"
+
+		return re;
+	}
+
+	function isDuplicated(url, arr)
+	{
+		if(urlMap[url] == 1)
+			return true;
+
+		urlMap[url] = 1
+		return false;
+
+		/*
+		for(var i=0; i<arr.length; i++)
+		{
+			//alert(arr[i] + "\n" +url)
+			if(arr[i] == url)
+				return true;
+		}
+	    return false;*/
+	}
+
+	function abstractUrl(url)
+	{
+		var resp = getResp(url);
+		var arr = constructURLArr(resp);
+		return arr;
+
+	}
+
+	function exec()
+	{
+		reset();
+		append();
+		save2File();
+	}
+
+	function append()
+	{
+		initGlobal();
+
+		var key = document.getElementById("keyword").value || ""
+		if(key == "")
+		{
+			alert("Pls put in the keyword you want to search!")
+			return
+		}
+
+		updateStatus("Start to collect images' url...")
+		for(var i=0; ; i++)
+		{
+			var imgUrls = abstractUrl(genGoogleImageUrl(key, i))
+			if(!imgUrls)
+				break;
+			urlArr = urlArr.concat(imgUrls);
+			if(urlArr.length>=gMaxUrlCount)
+				break;
+
+			//alert(imgUrls)
+		}
+		updateStatus(urlArr.length + " url have been collected.")
+
+		return urlArr
+	}
+
+	function initGlobal()
+	{
+		gStartCount = parseInt(document.getElementById("start_count").value || "0")
+		gMaxUrlCount = parseInt(document.getElementById("max_count").value || "1000")
+		gImgSize = document.getElementById("comboSize").value
+		gImgType = document.getElementById("comboType").value
+		gImgColor = document.getElementById("comboColor").value
+		gThumbnail = document.getElementById("tbn_only").checked
+		gShowTbn = document.getElementById("show_tbn").checked
+		gSafeSearch = document.getElementById("safe_search").checked
+
+	}
+
+	function save2File()
+	{
+		var key = document.getElementById("keyword").value || ""
+		initGlobal()
+		var outputPath = gBaseFolder + "output\\" + key+"_"+gStartCount+"_to_"+urlArr.length+".html";
+		updateStatus("Generating result file...")
+		writeFile(arr2Str(urlArr), outputPath)
+		updateStatus("Done! " + urlArr.length + " images' url have been collected.")
+		alert("Done! Generated bookmark file is in \n" + gBaseFolder + "output\\")
+
+	}
+
+	function genGoogleImageUrl(keyword, time)
+	{
+		var url = gGoogleImageUrl + "&q="+encodeURI(keyword) + "&start="+ (gStartCount+21*time)
+		if(gImgSize != "any") url+="&imgsz=" + gImgSize;
+		if(gImgType != "any") url+="&imgtype=" + gImgType;
+		if(gImgColor != "any") url+="&imgc=" + gImgColor;
+		if(gSafeSearch) url+= "&safe=on"
+		else url+="&safe=off"
+		return url;
+	}
+
+	function updateStatus(str)
+	{
+		document.getElementById("status").innerHTML = str
+	}
+
+	function test()
+	{
+		initGlobal();
+		var keyword = document.getElementById("keyword").value || "";
+		updateStatus(genGoogleImageUrl(keyword, 0))
+	}
+	function reset()
+	{
+		urlArr = []
+		urlMap = {}
+		updateStatus(urlArr.length + " url is in memory now")
+	}
+  </script>
+
+</head>
+
+<body>
+<div id=status>Ready!</div>
+<table>
+  <tr><td>Keyword</td><td><input id=keyword size=50 value=""/></td></tr>
+  <tr><td>Size</td><td><select id=comboSize>
+                         <option value=any>Any</option>
+                         <option value=l>Large</option>
+                         <option value=m>Medium</option>
+                         <option value=i>Icon</option>
+                       </select></td></tr>
+  <tr><td>Type</td><td><select id=comboType>
+                         <option value=any>Any</option>
+                         <option value=face>Face</option>
+                         <option value=photo>Photo</option>
+                         <option value=clipart>Clip Art</option>
+                         <option value=lineart>Line Drawning</option>
+                       </select></td></tr>
+  <tr><td>Color</td><td><select id=comboColor>
+                         <option value=any>Any</option>
+                         <option value=color>Color</option>
+                         <option value=gray>Black and White</option>
+                       </select></td></tr>
+  <tr><td>Start from </td><td><input id=start_count size=10 value="0"/></td></tr>
+  <tr><td>No. of Images to Retrieve</td><td><input id=max_count size=10 value="1000"/></td></tr>
+  <tr><td>Thumbnail Only</td><td><input id=tbn_only type=checkbox /></td></tr>
+  <tr><td>Show Thumbnail</td><td><input id=show_tbn type=checkbox /></td></tr>
+  <tr><td>Safe Search</td><td><input id=safe_search type=checkbox /></td></tr>
+  <tr><td><button onclick='exec()'>Exec</button></td>
+      <td><button onclick='append()'>Append</button> <button onclick='save2File()'>Save</button><button onclick='reset()'>Reset</button><button onclick='test()'>test</button></td>
+  </tr>
+
+  <!--tr><td>URL</td><td><input id=url_input size=102 value="http://"/></td></tr>
+  <tr><td>Regex</td><td><input id=regex_input size=102 value="/.*/i"/></td></tr-->
+</table>
+
+<div style='display:none;'>
+  <button onclick="postRequest()">Post Request</button>
+  <button onclick="testRegex()">Test Regex</button>
+  <button onclick="testRegexArr()">Test Regex Arr</button>
+  <button onclick="eval(document.getElementById('response_txt').value)">Eval</button>
+
+  <div>Response:</div>
+  <textarea id=response_txt style="width:100%;height:300px;"></textarea>
+  <div>Regex Result:</div>
+  <textarea id=regex_txt style="width:100%;height:300px;"></textarea>
+</div>
+
+</body>
+</html>

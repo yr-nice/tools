@@ -1,0 +1,136 @@
+<HTML>
+<HEAD>
+<TITLE></TITLE>
+<style type="text/css">
+td {width:40px;}
+</style>
+
+<script type="text/javascript">
+var WshShell = new ActiveXObject("WScript.Shell");
+var dicPinyin = loadPinyinDic(WshShell.CurrentDirectory+"\\Unihan\\Unihan_Mandarin.txt");
+//alert(WshShell.CurrentDirectory+"\\Unihan\\Unihan_Mandarin.txt");
+
+
+
+function convert()
+{
+	var val = document.getElementById("in").value;
+	var out = "";
+	var pinyin = document.getElementById("pinyin").checked;
+	if(!pinyin)
+	{
+		for(var a=0; a<val.length; a++)
+		{
+			if(val.charCodeAt(a)>127)
+				out+="&#"+val.charCodeAt(a)+";";
+			else
+				out+=val.charAt(a);
+		}
+	}
+	else
+	{
+		for(var a=0; a<val.length; a++)
+		{
+			var id = val.charCodeAt(a).toString(16).toUpperCase();
+			if(dicPinyin.Exists(id))
+				out += dicPinyin.Item(id).split(" ")[0] + " ";
+			else
+				out += val.charAt(a) + " ";
+		}
+
+	}
+	//alert(out);
+	document.getElementById("out").value = out;
+	document.getElementById("show").innerHTML = out;
+}
+
+function loadFile(path)
+{
+	var fso;
+	var ForReading = 1, ForWriting = 2;
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+	var f;
+	f = fso.OpenTextFile(path, ForReading);
+	resultFile = f.ReadAll();
+	return resultFile;
+}
+
+function loadPinyinDic(path)
+{
+	var content = loadFile(path);
+	var dic = new ActiveXObject("Scripting.Dictionary");
+
+	var arrLines = content.split("\n");
+	for(i=0; i<arrLines.length; i++)
+	{
+		var arrItems = arrLines[i].split("=");
+		dic.Add(arrItems[0], arrItems[1]);
+	}
+	return dic;
+}
+
+function show()
+{
+	document.getElementById("show").innerHTML = document.getElementById("out").value;
+}
+
+function showChar()
+{
+	var column = parseInt(document.getElementById("column").value);
+
+	var from = parseInt(document.getElementById("from").value);
+	var to = parseInt(document.getElementById("to").value);
+	//alert(to);
+	!column? column=10:"";
+	!to? to=from:"";
+	!from? from=to:"";
+	var out = "<table><tr style='font-weight:bold;'><td></td>"
+
+	for(i=0; i<column; i++)
+	{
+		out += "<td>"+i+"</td>";
+	}
+
+	var a = from - from%column;
+	out +="</tr><tr><td style='width:60'><b>"+a+"</b></td>";
+
+	for(i=a; i<from; i++)
+	{
+		out+="<td></td>";
+	}
+
+	for(i=from; i<=to; i++)
+	{
+		if(i%column==0)
+			out+="</tr><tr><td><b>" + i + "</b></td>";
+		out+="<td>&#"+i+";</td>";
+
+	}
+	out +="</tr></table>"
+
+	document.getElementById("showchar").innerHTML = out;
+}
+
+
+
+</script>
+
+</HEAD>
+
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000" LINK="#FF0000" VLINK="#800000" ALINK="#FF00FF" BACKGROUND="?">
+<p>Source:</p>
+<textarea id="in" style="width:100%; height:30%;overflow-y:auto;"></textarea>
+<br/>
+<button onclick="convert()">Convert</button>
+<button onclick="show()">Show</button>
+<input type="checkbox" id="pinyin" checked="true">Show Pinyin</input>
+<p>Result:</p>
+<textarea id="out" style="width:100%; height:30%; overflow-y:auto;"></textarea>
+<div id=show style="width:100%;"></div>
+<div>
+	<button onclick="showChar(10)">Show Unicode Char</button>
+	&nbsp;From &nbsp;<input type=text id=from /> &nbsp;To&nbsp; <input type=test id=to />&nbsp;&nbsp;Column&nbsp;<input type=text id=column value="10" /></div>
+<div id=showchar style="width:100%;"></div>
+
+</BODY>
+</HTML>

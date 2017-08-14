@@ -1,0 +1,409 @@
+<html>
+<head>
+  <title>Testing page for Ajax and Regular Expression</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <script type="text/javascript" src="./prototype-1.6.0.3.js"></script>
+  <script type="text/javascript" src="./dateFormat.js"></script>
+  <script type="text/javascript" src="./pmjslib.js"></script>
+  <script type="text/javascript" src="./config.js"></script>
+  <!--script type="text/javascript" src="./jquery-1.3.1.js"></script-->
+
+  <script>
+	var fso, gResp;
+	var ForReading = 1, ForWriting = 2, ForAppending=8;
+	var urlArr = [];
+	fso = new ActiveXObject("Scripting.FileSystemObject");
+
+	function getXMLHttpRequest()
+	{
+		if (window.XMLHttpRequest) {
+			return new window.XMLHttpRequest;
+		}
+		else {
+			try {
+				return new ActiveXObject("MSXML2.XMLHTTP.3.0");
+			}
+			catch(ex) {
+				return null;
+			}
+		}
+	}
+
+	function handler()
+	{
+		if (oReq.readyState == 4 /* complete */) {
+			if (oReq.status == 200) {
+				//logObj(oReq)
+				//alert(escape(oReq.responseText));
+				var a = oReq.responseText
+			}
+		}
+	}
+
+	function postRequest()
+	{
+		var url = document.getElementById("url_input").value;
+		/*alert(url)
+
+
+		oReq = getXMLHttpRequest();
+
+		if (oReq != null) {
+		    oReq.open("GET", url, true);
+		    oReq.onreadystatechange = handler;
+		    oReq.setRequestHeader("Content-type", "application/json");
+		    oReq.setRequestHeader("Accept-Charset","UTF-8");
+
+		    oReq.send();
+		}
+		else {
+		    window.alert("AJAX (XMLHTTP) not supported.");
+		}*/
+
+
+		new Ajax.Request(url,
+		{
+			method: 'get',
+			asynchronous: true,
+			evalJS: false,
+			evalJSON: false,
+			encoding: 'UTF-8',
+			requestHeaders: {ownerPodcastId:"PODC1249023485703407", currpage:"2", elementId:"ELEM1249023485937426"},
+
+			onComplete: function(transport)
+			{
+				alert(transport.responseText)
+				document.getElementById("response_txt").value = transport.responseText;
+			},
+			onFailure: function()
+			{
+				document.getElementById("response_txt").value = "Failed";
+			}
+		})
+
+		/*$.get(url, {videoId:"VIDE1253455906000458"},
+		  function(data){
+		    //alert("Data Loaded: " + data);
+		    document.getElementById("response_txt").value = data;
+		  },"html");*/
+
+
+		  /*$.post(url, {videoId:"VIDE1253455906000458"},
+		  function(data){
+		    alert("Data Loaded: " + data);
+		    //document.getElementById("response_txt").value = data;
+		  })*/
+
+		  /*var abc = $.ajax({
+		     type: "get",
+		     url: url,
+		     contentType: "charset=utf-8",
+		     data: "videoId=VIDE1253455906000458",
+		     async: false,
+		     success: function(msg)
+		     {
+		       alert( "Data Saved: " + msg );
+		     }
+
+		   });
+		   logObj(abc)*/
+//document.getElementById("divResult").innerHTML=abc.responseText;
+
+
+
+
+	}
+
+	function logObj(obj)
+	{
+		for(var i in obj)
+		{
+			var str = i + ":" +obj[i];
+			/*for(var j = 1; j<arguments.length; j++)
+				str += ", " + arguments[j] + ":" +obj[i][ arguments[j] ];*/
+			alert(str);
+		}
+	}
+
+	function getResp(url)
+	{
+		//alert(url)
+		gResp = "";
+		new Ajax.Request(url,
+		{
+			method: 'get',
+			asynchronous: false,
+			onComplete: function(transport)
+			{
+				document.getElementById("response_txt").value = transport.responseText;
+				gResp = transport.responseText;
+			},
+			onFailure: function()
+			{
+				document.getElementById("response_txt").value = "Failed";
+			}
+		})
+
+		return gResp;
+	}
+
+	function testRegex()
+	{
+		var resp = document.getElementById("response_txt").value;
+		//var pattern = document.getElementById("regex_input").value;
+		eval("var pattern = "+document.getElementById("regex_input").value);
+		//alert(pattern);
+		var arr = minMatch(resp, pattern);
+		var str = ""
+		if(!arr || arr.length<1)
+			document.getElementById("regex_txt").value="Not Match!";
+		else
+		{
+			for(var i=0; i<arr.length; i++ )
+				str += i+":"+arr[i] + "\n"
+			document.getElementById("regex_txt").value=str;
+		}
+
+
+	}
+
+	function testRegexArr()
+	{
+		var resp = document.getElementById("response_txt").value;
+		//var pattern = document.getElementById("regex_input").value;
+		eval("var pattern = "+document.getElementById("regex_input").value);
+		//alert(pattern);
+		var arr = minMatchArr(resp, pattern);
+		var str = ""
+		if(!arr || arr.length<1)
+			document.getElementById("regex_txt").value="Not Match!";
+		else
+		{
+			for(var i=0; i<arr.length; i++ )
+			{
+				for(var j=0; j<arr[i].length; j++)
+				str += i+">>>> "+j+":"+arr[i][j] + "\n"
+			}
+			document.getElementById("regex_txt").value=str;
+		}
+	}
+
+	function readFile(path)
+	{
+		var f = fso.OpenTextFile(path, ForReading);
+		return f.ReadAll();
+	}
+	function writeFile(content, path)
+	{
+		var f = fso.OpenTextFile(path, ForWriting, true);
+		//alert(content);
+		f.Write(content);
+		f.Close();
+		//alert("Done!!"+path);
+
+	}
+
+	function constructURLArr(resp)
+	{
+		var re = [];
+		var arr = minMatchArr(resp, /imgurl.x3d(http.*).x26/i);
+		var str = ""
+		if(!arr || arr.length<1)
+		{
+			alert("Not Match!");
+			return null;
+		}
+		//else if(!descArr || descArr.length != arr.length)
+		//	alert("Description is not complete! " + descArr.length +", "+ arr.length)
+		else
+		{
+			for(var i=0; i<arr.length; i++ )
+			{
+				if(isDuplicated(arr[i][1], urlArr))
+					continue;
+
+				for(var j=0; j<arr[i].length; j++)
+					str += i+">>>> "+j+":"+arr[i][j] + "\n"
+				re.push(arr[i][1]);
+			}
+			document.getElementById("regex_txt").value=str;
+		}
+
+		return re;
+
+	}
+
+
+	function arr2Str(arr)
+	{
+		var re = "";
+		for(var i=0; i<arr.length; i++)
+			re += "<a href="+arr[i]+" >" + arr[i] + "</a><br>\n"
+
+		return re;
+	}
+
+	function isDuplicated(url, arr)
+	{
+		for(var i=0; i<arr.length; i++)
+		{
+			//alert(arr[i] + "\n" +url)
+			if(arr[i] == url)
+				return true;
+		}
+	    return false;
+	}
+
+	function abstractUrl(url)
+	{
+		var resp = getResp(url);
+		var arr = constructURLArr(resp);
+		return arr;
+
+	}
+
+	function exec()
+	{
+		urlArr = [];
+		append();
+		save2File();
+	}
+
+	function append()
+	{
+		initGlobal();
+
+		var key = document.getElementById("keyword").value || ""
+		if(key == "")
+		{
+			alert("Pls put in the keyword you want to search!")
+			return
+		}
+
+		updateStatus("Start to collect images' url...")
+		for(var i=0; ; i++)
+		{
+			var imgUrls = abstractUrl(genGoogleImageUrl(key, i))
+			if(!imgUrls)
+				break;
+			urlArr = urlArr.concat(imgUrls);
+			if(urlArr.length>=gMaxUrlCount)
+				break;
+
+			//alert(imgUrls)
+		}
+		updateStatus(urlArr.length + " url have been retrieved...")
+
+		return urlArr
+	}
+
+	function initGlobal()
+	{
+		gStartCount = parseInt(document.getElementById("start_count").value || "0")
+		gMaxUrlCount = parseInt(document.getElementById("max_count").value || "1000")
+		gImgSize = document.getElementById("comboSize").value
+		gImgType = document.getElementById("comboType").value
+		gImgColor = document.getElementById("comboColor").value
+	}
+
+	function save2File()
+	{
+		var key = document.getElementById("keyword").value || ""
+		gStartCount = parseInt(document.getElementById("start_count").value || "0")
+		var outputPath = gBaseFolder + "output\\" + key+"_"+gStartCount+"_to_"+urlArr.length+".html";
+		updateStatus("Generating result file...")
+		writeFile(arr2Str(urlArr), outputPath)
+		updateStatus("Done! " + urlArr.length + " images' url have been collected.")
+		alert("Done! Generated bookmark file is in \n" + gBaseFolder + "output\\")
+
+	}
+
+	function genGoogleImageUrl(keyword, time)
+	{
+		var url = gGoogleImageUrl + "&q="+encodeURI(keyword) + "&start="+ (gStartCount+21*time)
+		if(gImgSize != "any") url+="&imgsz=" + gImgSize;
+		if(gImgType != "any") url+="&imgtype=" + gImgType;
+		if(gImgColor != "any") url+="&imgc=" + gImgColor;
+		return url;
+	}
+
+	function updateStatus(str)
+	{
+		document.getElementById("status").innerHTML = str
+	}
+
+	function test()
+	{
+		initGlobal();
+		/*var keyword = document.getElementById("keyword").value || "";
+		updateStatus(genGoogleImageUrl(keyword, 0))*/
+		var val = document.getElementById("response_txt").value;
+		document.getElementById("regex_txt").value = removeNoneAsc(val)
+
+	}
+	function reset()
+	{
+		urlArr = []
+		updateStatus(urlArr.length + " url is in memory now")
+	}
+
+	function removeNoneAsc(val)
+	{
+		var out = "";
+		for(var a=0; a<val.length; a++)
+		{
+			if(val.charCodeAt(a)<128)
+				out+=val.charAt(a);
+		}
+		//updateStatus(out);
+		return out;
+
+	}
+
+  </script>
+
+</head>
+
+<body>
+<div id=status>Ready!</div>
+<table>
+  <tr><td>Keyword</td><td><input id=keyword size=50 value=""/></td></tr>
+  <tr><td>Size</td><td><select id=comboSize>
+                         <option value=any>Any</option>
+                         <option value=l>Large</option>
+                         <option value=m>Medium</option>
+                         <option value=i>Icon</option>
+                       </select></td></tr>
+  <tr><td>Type</td><td><select id=comboType>
+                         <option value=any>Any</option>
+                         <option value=face>Face</option>
+                         <option value=photo>Photo</option>
+                         <option value=clipart>Clip Art</option>
+                         <option value=lineart>Line Drawning</option>
+                       </select></td></tr>
+  <tr><td>Color</td><td><select id=comboColor>
+                         <option value=any>Any</option>
+                         <option value=color>Color</option>
+                         <option value=gray>Black and White</option>
+                       </select></td></tr>
+  <tr><td>Start from </td><td><input id=start_count size=10 value="0"/></td></tr>
+  <tr><td>No. of Images to Retrieve</td><td><input id=max_count size=10 value="1000"/></td></tr>
+  <tr><td><button onclick='exec()'>Exec</button></td>
+      <td><button onclick='append()'>Append</button> <button onclick='save2File()'>Save</button><button onclick='reset()'>Reset</button><button onclick='test()'>test</button></td>
+  </tr>
+
+  <tr><td>URL</td><td><input id=url_input size=102 value="http://"/></td></tr>
+  <tr><td>Regex</td><td><input id=regex_input size=102 value="/.*/i"/></td></tr>
+</table>
+  <button onclick="postRequest()">Post Request</button>
+  <button onclick="testRegex()">Test Regex</button>
+  <button onclick="testRegexArr()">Test Regex Arr</button>
+  <button onclick="eval(document.getElementById('response_txt').value)">Eval</button>
+
+<div>Response:</div>
+<textarea id=response_txt style="width:100%;height:300px;"></textarea>
+<div>Regex Result:</div>
+<textarea id=regex_txt style="width:100%;height:300px;"></textarea>
+<div id=divResult></div>
+</body>
+</html>

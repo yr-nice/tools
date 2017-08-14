@@ -1,0 +1,23 @@
+{
+   "background": {
+      "scripts": [ "bg.js" ]
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/disabled.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "My Proxy"
+   },
+   "description": "Use My Proxy.",
+   "icons": {
+      "48": "img/icon.png"
+   },
+   //"key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAqjjMJXmlrfnNKzwkgwwsJp/vMcoRlQSvAb/YHExA+T1QFdZ4uLVJadFiVLMBbLnGdb6tllJkD/kZwx5LPF33Y/rNncx7cLlPpoUuNi7ONI8K0CxfX5pevZTL10iPT3tY+xQDdZIfr5xIH6RDb3D6y+cOKsRH8doX7eKnKdOqp/B21upcH8rrpDI4Fong918KazRPxH19pdqE/1xlfmSDnlAzCV4ai6sefsXxAlz4FjAzAE2prRbDUWaxwO6IXiET2QQUxnPBoEwjebjwa2w0sFrv2ZZY2VQC1hzthBxrhjcAf+YZQPhwKGmTpvQV98f7ZMe1t/uJIACG6gKgkVkwQQIDAQAB",
+   "manifest_version": 2,
+   "name": "My Proxy",
+   "permissions": [ "cookies", "storage", "proxy", "*://*.proxy-list.org/", "*://*.best-proxy.com/", "*://*/*"],
+   "short_name": "BPS",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.5.0"
+}

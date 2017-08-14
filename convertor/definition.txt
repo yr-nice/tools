@@ -1,0 +1,22 @@
+buy no: 共买股数
+sell no: 共卖股数
+hold no:当前持有股数
+buy amt: 买股总开销
+sell amt: 卖股总收益
+buy amt bls (before last sell): 最后一次卖股前的买股总开销
+ave buy price  bls (before last sell) : 最后一次卖股前的平均买股价=buy amt bls/sell no
+hold amt: 购买当前所持有的股票的开销 = buy no - (ave buy price  bls)*sell no
+hold break even: 当前所持有的股票的break even=f(hold no,  hold amt)
+total break even: 包含本只股票所有历史交易的break even = f(hold no,  buy amt-sell amt)
+cur profit: 已完成的交易的利润 = sell amt- ave buy price  bls*sell no
+
+tgt price: 当前所持有的股票的目标价格
+hold tgt profit: 当前所持有的股票的目标利润=hold no*tgt price - hold amt
+hold tgt profit per: 当前所持有的股票的目标利润的百分比=hold tgt profit*100/hold amt
+tgt profit: 包含本只股票所有历史交易的目标利润=hold no*tgt price+sell amt-buy amt
+tgt profit per:包含本只股票所有历史交易的目标利润的百分比=tgt profit/buy amt
+
+cur price: 当前本股价格
+mkt value: 所持有的股票的市场价值 = hold no * cur price
+hold change: 所持有的股票的价值的改变=mkt value - hold amt
+total profit: 在当前的价钱下，本只股票总的利润= mkt value + sell amt - buy amt

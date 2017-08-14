@@ -1,0 +1,41 @@
+1. Add new word
+>>basic
+word	phonetic	translation	tags	rank
+
+>>more:
+image
+example	
+remarks
+
+>>find related 
+related
+
+>>add extended attr
+extended
+
+2. List words
+>>basic
+word	phonetic	translation	tags	rank	time
+word	phonetic	translation	tags	rank	time
+
+>>details and update
+word		rank
+phonetic
+image
+translation
+example	
+extended
+remarks
+link: tags
+link: related
+
+3. Search words
+by tag
+by a-z
+by rank
+by time
+from trans
+from example
+from related
+
+

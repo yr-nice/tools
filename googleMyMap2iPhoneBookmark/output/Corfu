@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bookmarks</key>
+	<array>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>7pm 29 Sep</string>
+			<key>LatitudeE6</key>
+			<integer>39626301</integer>
+			<key>LongitudeE6</key>
+			<integer>19907473</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=39.626301,19.907473%20%28Port%20%29</string>
+			<key>Name</key>
+			<string>Port </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Corfu Holiday Palace 2 Nausicas Street Kanoni, 49100, Greece, 26610-36540, 29 Sep - 2 Oct, depart 2100 SEATRADE, VENTOURIS FERRIES, collect ticket GKCO Shipping Agency, 46 EL. Venizelou Str</string>
+			<key>LatitudeE6</key>
+			<integer>39627500</integer>
+			<key>LongitudeE6</key>
+			<integer>19921670</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=39.627500,19.921670%20%28Aquis%20Corfu%20Holiday%20Palace%20%29</string>
+			<key>Name</key>
+			<string>Aquis Corfu Holiday Palace </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>46 EL Veizelou Str 0030 26610 39747, 31569 Corfu 49100, Greece</string>
+			<key>LatitudeE6</key>
+			<integer>39626980</integer>
+			<key>LongitudeE6</key>
+			<integer>19914430</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=39.626980,19.914430%20%28Ticket%20collect%20%29</string>
+			<key>Name</key>
+			<string>Ticket collect </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

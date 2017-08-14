@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bookmarks</key>
+	<array>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>8 Oct 1711 to 9 Oct afternoon</string>
+			<key>LatitudeE6</key>
+			<integer>46497953</integer>
+			<key>LongitudeE6</key>
+			<integer>9846385</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.497953,9.846385%20%28Train%20station%20%29</string>
+			<key>Name</key>
+			<string>Train station </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Train station near to hotel</string>
+			<key>LatitudeE6</key>
+			<integer>46509647</integer>
+			<key>LongitudeE6</key>
+			<integer>9865111</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.509647,9.865111%20%28Celerina%20Staz%20%29</string>
+			<key>Name</key>
+			<string>Celerina Staz </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>46510759</integer>
+			<key>LongitudeE6</key>
+			<integer>9856449</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.510759,9.856449%20%28Hotel-Restaurant%20Alte%20Brauerei%20%29</string>
+			<key>Name</key>
+			<string>Hotel-Restaurant Alte Brauerei </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>46513961</integer>
+			<key>LongitudeE6</key>
+			<integer>9862862</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.513961,9.862862%20%28Hotel%20Chesa%20Rosatsch%20%29</string>
+			<key>Name</key>
+			<string>Hotel Chesa Rosatsch </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Funicular station - hike to Alp, then open chair down</string>
+			<key>LatitudeE6</key>
+			<integer>46509009</integer>
+			<key>LongitudeE6</key>
+			<integer>9882866</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.509009,9.882866%20%28Punt%20Muragl%20CBB-mmb%20%29</string>
+			<key>Name</key>
+			<string>Punt Muragl CBB-mmb </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Muottas Muragl to Alp Languard </string>
+			<key>LatitudeE6</key>
+			<integer>46521667</integer>
+			<key>LongitudeE6</key>
+			<integer>9901874</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.521667,9.901874%20%28Muottas%20Muragl%20%29</string>
+			<key>Name</key>
+			<string>Muottas Muragl </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>46504278</integer>
+			<key>LongitudeE6</key>
+			<integer>9917318</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.504278,9.917318%20%28Segantini%20Hutte%20%29</string>
+			<key>Name</key>
+			<string>Segantini Hutte </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Muottas Muragl to Alp Languard. hiking route available on top, take the bus at Samedan, SBC - Direction: Pontresina, Post, open chair </string>
+			<key>LatitudeE6</key>
+			<integer>46487815</integer>
+			<key>LongitudeE6</key>
+			<integer>9921856</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.487815,9.921856%20%28Alp%20Languard%20%29</string>
+			<key>Name</key>
+			<string>Alp Languard </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>glacier walk, 0830 - 1700,  - cable car - closed car</string>
+			<key>LatitudeE6</key>
+			<integer>46440696</integer>
+			<key>LongitudeE6</key>
+			<integer>9983826</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.440696,9.983826%20%28Bernina%20Diavolezza%20LBD%20%29</string>
+			<key>Name</key>
+			<string>Bernina Diavolezza LBD </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Funicular station -- flower fairy -- chantarella station Schellenursli trail </string>
+			<key>LatitudeE6</key>
+			<integer>46499369</integer>
+			<key>LongitudeE6</key>
+			<integer>9836465</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.499369,9.836465%20%28Sankt%20Moritz%20SMBB%20%29</string>
+			<key>Name</key>
+			<string>Sankt Moritz SMBB </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>from singal, cable car - large car</string>
+			<key>LatitudeE6</key>
+			<integer>46483494</integer>
+			<key>LongitudeE6</key>
+			<integer>9832570</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.483494,9.832570%20%28Sankt%20Moritz%20Bad%20SMBB%20%29</string>
+			<key>Name</key>
+			<string>Sankt Moritz Bad SMBB </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Take bus to here to start a hiking along lakes. Maybe also explore Fex-curtins.</string>
+			<key>LatitudeE6</key>
+			<integer>46430226</integer>
+			<key>LongitudeE6</key>
+			<integer>9765086</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.430226,9.765086%20%28Sils%20Posta%20%29</string>
+			<key>Name</key>
+			<string>Sils Posta </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Cable car</string>
+			<key>LatitudeE6</key>
+			<integer>46418009</integer>
+			<key>LongitudeE6</key>
+			<integer>9821391</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.418009,9.821391%20%28Corvatsch%20%29</string>
+			<key>Name</key>
+			<string>Corvatsch </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Optional, along the lake</string>
+			<key>LatitudeE6</key>
+			<integer>46463936</integer>
+			<key>LongitudeE6</key>
+			<integer>9803667</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.463936,9.803667%20%28Plain%20Hiking%20%29</string>
+			<key>Name</key>
+			<string>Plain Hiking </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Take map, and get some info</string>
+			<key>LatitudeE6</key>
+			<integer>46696991</integer>
+			<key>LongitudeE6</key>
+			<integer>10097916</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.696991,10.097916%20%28Visitor%20Center%20Swiss%20National%20Park%20%29</string>
+			<key>Name</key>
+			<string>Visitor Center Swiss National Park </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Ova Spin - Champlonch (P1) - Alp Grimmels - Vallun Chafuol (P3). Partly, Route 12 </string>
+			<key>LatitudeE6</key>
+			<integer>46678770</integer>
+			<key>LongitudeE6</key>
+			<integer>10160851</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.678770,10.160851%20%28Ova%20Spin%20%29</string>
+			<key>Name</key>
+			<string>Ova Spin </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Ova Spin - Champlonch (P1) - Alp Grimmels - Vallun Chafuol (P3). Partly, Route 12 </string>
+			<key>LatitudeE6</key>
+			<integer>46679624</integer>
+			<key>LongitudeE6</key>
+			<integer>10167160</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.679624,10.167160%20%28Champlonch%20%29</string>
+			<key>Name</key>
+			<string>Champlonch </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Ova Spin - Champlonch (P1) - Alp Grimmels - Vallun Chafuol (P3). Partly, Route 12 </string>
+			<key>LatitudeE6</key>
+			<integer>46665784</integer>
+			<key>LongitudeE6</key>
+			<integer>10188403</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.665784,10.188403%20%28Alp%20Grimmels%20%29</string>
+			<key>Name</key>
+			<string>Alp Grimmels </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Ova Spin - Champlonch (P1) - Alp Grimmels - Vallun Chafuol (P3). Partly, Route 12 </string>
+			<key>LatitudeE6</key>
+			<integer>46662603</integer>
+			<key>LongitudeE6</key>
+			<integer>10171108</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.662603,10.171108%20%28Vallun%20Chafuol%20%29</string>
+			<key>Name</key>
+			<string>Vallun Chafuol </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Punt la Drossa (P4) - Il Fuorn (P6) - P7 - P8 - P9 - Buffalora.  Route 14 and 16</string>
+			<key>LatitudeE6</key>
+			<integer>46654297</integer>
+			<key>LongitudeE6</key>
+			<integer>10190120</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.654297,10.190120%20%28Punt%20la%20Drossa%20%29</string>
+			<key>Name</key>
+			<string>Punt la Drossa </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Hiking, Punt la Drossa (P4) - Il Fuorn (P6) - P7 - P8 - P9 - Buffalora.  Route 14 and 16</string>
+			<key>LatitudeE6</key>
+			<integer>46647989</integer>
+			<key>LongitudeE6</key>
+			<integer>10267386</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.647989,10.267386%20%28Buffalora%20%29</string>
+			<key>Name</key>
+			<string>Buffalora </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>probably not going</string>
+			<key>LatitudeE6</key>
+			<integer>46643150</integer>
+			<key>LongitudeE6</key>
+			<integer>10194640</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.643150,10.194640%20%28Alp%20la%20Schera%20%29</string>
+			<key>Name</key>
+			<string>Alp la Schera </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>probably not going</string>
+			<key>LatitudeE6</key>
+			<integer>46678593</integer>
+			<key>LongitudeE6</key>
+			<integer>10237498</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.678593,10.237498%20%28Val%20dal%20Botsch%20%29</string>
+			<key>Name</key>
+			<string>Val dal Botsch </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>probably not going</string>
+			<key>LatitudeE6</key>
+			<integer>46677210</integer>
+			<key>LongitudeE6</key>
+			<integer>10242562</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=46.677210,10.242562%20%28Margunet%20%29</string>
+			<key>Name</key>
+			<string>Margunet </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

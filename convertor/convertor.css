@@ -1,0 +1,264 @@
+BODY {
+	MARGIN-TOP: 30px; FONT-SIZE: 13px; BACKGROUND: #fff; COLOR: #000; FONT-FAMILY: arial,Simsun; 
+}
+A:link {
+	COLOR: #036; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #036; TEXT-DECORATION: none
+}
+A:active {
+	COLOR: #036; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #00c; TEXT-DECORATION: none
+}
+#header {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: auto; WIDTH: 730px; PADDING-TOP: 0px; HEIGHT: 60px; TEXT-ALIGN: center
+}
+#comefrom {
+	MARGIN: 2px 0px 20px; WIDTH: 730px; COLOR: #c00; TEXT-ALIGN: center
+}
+.log {
+	WIDTH: 250px; TEXT-ALIGN: center
+}
+.minilog {
+	OVERFLOW-Y: hidden; FLOAT: left; WIDTH: 160px
+}
+.navq {
+	MARGIN-TOP: 6px; OVERFLOW-Y: hidden; FLOAT: right; WIDTH: 560px; HEIGHT: 65px
+}
+.navm {
+	WIDTH: 560px
+}
+.navig {
+	DISPLAY: block; MARGIN: 1px 0px 1em; WIDTH: 550px; LINE-HEIGHT: 1; POSITION: relative
+}
+.navig UL {
+	CLEAR: both; BORDER-TOP: #c00 1px dotted; DISPLAY: block; LEFT: -40px; VISIBILITY: hidden; WIDTH: 550px; POSITION: absolute; TOP: 1.9em
+}
+.navig A {
+	PADDING-RIGHT: 0.4em; DISPLAY: block; PADDING-LEFT: 0.4em; PADDING-BOTTOM: 0.5em; COLOR: #000; PADDING-TOP: 0.5em; TEXT-DECORATION: none
+}
+.navig A.toplevel {
+	WIDTH: 78px; TEXT-ALIGN: center
+}
+.navig A.selected {
+	COLOR: #c00
+}
+.navig LI {
+	BORDER-RIGHT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: 0px; DISPLAY: block; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: 0px; PADDING-TOP: 0px; BORDER-BOTTOM: 0px
+}
+.navig LI.selected UL {
+	VISIBILITY: visible
+}
+.navig LI:hover UL {
+	VISIBILITY: visible
+}
+.navig LI.selected UL {
+	Z-INDEX: 10
+}
+.navig LI:hover UL {
+	Z-INDEX: 100
+}
+.navig LI A.toplevel:hover {
+	FONT-WEIGHT: bold; VISIBILITY: visible; COLOR: #c00
+}
+.navig LI.selected A.toplevel {
+	BORDER-RIGHT: #c00 1px solid; BORDER-TOP: #c00 1px solid; FONT-WEIGHT: bold; VISIBILITY: visible; BORDER-LEFT: #c00 1px solid; COLOR: #c00; BORDER-BOTTOM: 0px
+}
+.navig LI LI {
+	BORDER-RIGHT: #999 1px dotted; PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.navig LI LI A:hover {
+	COLOR: #00c; TEXT-DECORATION: underline
+}
+.navig .twolevelhover A {
+	COLOR: #000; BACKGROUND-COLOR: #e9f8d7
+}
+.navig .twolevelhover A.toplevel {
+	BORDER-RIGHT: #c00 1px dotted; BORDER-TOP: #c00 1px dotted; FONT-WEIGHT: bold; BORDER-LEFT: #c00 1px dotted; COLOR: #c00; BORDER-BOTTOM: 0px
+}
+.navig .twolevelhover A.selected {
+	COLOR: #c00
+}
+.navig .twolevelhover UL {
+	BORDER-TOP: #c00 1px dotted; Z-INDEX: 100; VISIBILITY: visible; COLOR: #c00; BACKGROUND-COLOR: #e9f8d7
+}
+.line {
+	MARGIN-TOP: -4px; WIDTH: 730px; BORDER-BOTTOM: #00c 1px solid; HEIGHT: 1px
+}
+.msbox {
+	MARGIN: 48px auto 30px
+}
+.qsbox {
+	MARGIN: 5px auto -20px; WIDTH: 728px; TEXT-ALIGN: left
+}
+#contain {
+	MARGIN: 6px auto 0px; WIDTH: 730px
+}
+#mainbg {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: left; PADDING-BOTTOM: 0px; WIDTH: 730px; PADDING-TOP: 0px
+}
+#right {
+	PADDING-RIGHT: 0px; OVERFLOW-Y: hidden; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 2px 0px; VERTICAL-ALIGN: top; WIDTH: 196px; PADDING-TOP: 0px; TEXT-ALIGN: center
+}
+#left {
+	PADDING-RIGHT: 4px; OVERFLOW-Y: hidden; PADDING-LEFT: 4px; FLOAT: left; PADDING-BOTTOM: 4px; MARGIN: 0px; WIDTH: 622px; PADDING-TOP: 4px; TEXT-ALIGN: left
+}
+#mainbg UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#mainbg LI {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 8px
+}
+#mainbg LI STRONG {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px
+}
+#submenu {
+	BORDER-RIGHT: #feb 2px solid; PADDING-RIGHT: 3px; BORDER-TOP: #feb 2px solid; PADDING-LEFT: 3px; BACKGROUND: #fff; FLOAT: left; PADDING-BOTTOM: 3px; MARGIN: 0px 0px 1em; BORDER-LEFT: #feb 2px solid; WIDTH: 516px; PADDING-TOP: 3px; BORDER-BOTTOM: #feb 2px solid
+}
+#submenu UL {
+	FLOAT: left
+}
+#submenu LI {
+	PADDING-RIGHT: 2px; PADDING-LEFT: 2px; PADDING-BOTTOM: 2px; PADDING-TOP: 2px; LIST-STYLE-TYPE: none
+}
+P.title {
+	MARGIN: 20px 0px 0px
+}
+#footer {
+	CLEAR: both; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 36px auto 0px; WIDTH: 730px; PADDING-TOP: 0px
+}
+#dl {
+	CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+DD {
+	CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+#tb {
+	FONT-SIZE: 13px; FONT-FAMILY: verdana,arial,Simsun
+}
+.tb {
+	FONT-SIZE: 13px; FONT-FAMILY: verdana,arial,Simsun
+}
+#Ads {
+	MARGIN-TOP: 0px; OVERFLOW-Y: hidden; FLOAT: right; WIDTH: 196px
+}
+#MiscBox {
+	MARGIN-TOP: 30px
+}
+#MiscBox A {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 6px; FONT-SIZE: 12px; PADDING-BOTTOM: 6px; PADDING-TOP: 6px
+}
+#CopyrightBox {
+	MARGIN-TOP: 2px; FONT-SIZE: 12px
+}
+.text {
+	FLOAT: left; MARGIN: 0px
+}
+#ResultBox {
+	FLOAT: left; MARGIN-LEFT: 6px; WIDTH: 500px; LINE-HEIGHT: 20px; MARGIN-RIGHT: 0px; TEXT-ALIGN: left
+}
+#AddiBox {
+	MARGIN-LEFT: 20px; LINE-HEIGHT: 12px; TEXT-ALIGN: center
+}
+#AddiBox LI {
+	PADDING-RIGHT: 6px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 8px
+}
+
+
+#bmiContainer {
+width: 600px; 
+}
+
+#bmiContainer table {
+width: 100%;
+border: 1px solid;
+}
+
+#bmiContainer input {
+width: 60px;
+}
+
+
+#tabContainer {
+border-left: 1px solid #c0c0c0;
+position: relative;
+top:1px;
+}
+
+#tabContainer a {
+border-top: 1px solid #c0c0c0;
+border-right: 1px solid #c0c0c0;
+padding: 3px;
+font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+font-size: 13px;
+cursor: pointer;
+height: 15px;
+width:60px;
+text-align:center;
+
+}
+
+#stockContainer table{
+font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+font-size: 11px;
+
+}
+
+
+#stockContainer td{
+padding: 0 4 0 4;
+}
+
+
+#stockContainer td input{
+font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+font-size: 11px;
+
+}
+
+#stockContainer td select{
+font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+font-size: 11px;
+}
+
+#pages a{
+cursor:pointer; 
+color: blue;
+}
+
+#curPage {
+font-weight:bold;
+}
+
+#totalPages {
+font-weight:bold;
+}
+
+button, a, select, input{
+font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+font-size: 11px;
+
+}
+
+#stockRstTbl tr{
+white-space: nowrap;
+}
+
+#stockTbl tr{
+white-space: nowrap;
+}
+
+#stockTbl td{
+white-space: nowrap;
+}
+
+.nowrap{
+white-space: nowrap;
+}
+
+#stockRstTbl td[cellIndex]{
+font-weight:bold;
+}

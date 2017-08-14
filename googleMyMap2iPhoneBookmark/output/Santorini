@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Bookmarks</key>
+	<array>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>FIRA CALDERA Vourvoulos, 84700, Greece 22860-24769, 26 Sep - 28 Sep, arrive 330pm, depart 330pm</string>
+			<key>LatitudeE6</key>
+			<integer>36418700</integer>
+			<key>LongitudeE6</key>
+			<integer>25431000</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.418700,25.431000%20%28Asteras%20Villas%20%29</string>
+			<key>Name</key>
+			<string>Asteras Villas </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>carpark behind Santorini Palace hotel</string>
+			<key>LatitudeE6</key>
+			<integer>36425000</integer>
+			<key>LongitudeE6</key>
+			<integer>25429722</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.425000,25.429722%20%28Bell%20Church%20%29</string>
+			<key>Name</key>
+			<string>Bell Church </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Oia</string>
+			<key>LatitudeE6</key>
+			<integer>36461024</integer>
+			<key>LongitudeE6</key>
+			<integer>25371798</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.461024,25.371798%20%28Windmill%20%29</string>
+			<key>Name</key>
+			<string>Windmill </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>36386293</integer>
+			<key>LongitudeE6</key>
+			<integer>25429444</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.386293,25.429444%20%28Athinios%20New%20Port%20%29</string>
+			<key>Name</key>
+			<string>Athinios New Port </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>36417622</integer>
+			<key>LongitudeE6</key>
+			<integer>25427599</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.417622,25.427599%20%28Old%20port%20%29</string>
+			<key>Name</key>
+			<string>Old port </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>36377828</integer>
+			<key>LongitudeE6</key>
+			<integer>25480642</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.377828,25.480642%20%28Black%20Beach%20%29</string>
+			<key>Name</key>
+			<string>Black Beach </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string></string>
+			<key>LatitudeE6</key>
+			<integer>36348938</integer>
+			<key>LongitudeE6</key>
+			<integer>25390671</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.348938,25.390671%20%28Kokkini%20Paralia%20-%20Red%20Beach%20%29</string>
+			<key>Name</key>
+			<string>Kokkini Paralia - Red Beach </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+		<dict>
+			<key>Thorouhfare</key>
+			<string>Pita, food</string>
+			<key>LatitudeE6</key>
+			<integer>36420000</integer>
+			<key>LongitudeE6</key>
+			<integer>25431666</integer>
+			<key>MapType</key>
+			<string>Standard</string>
+			<key>MapsURL</key>
+			<string>http://maps.google.com/maps?f=q&amp;q=36.420000,25.431666%20%28Luckys%20Souvlakis%20%29</string>
+			<key>Name</key>
+			<string>Luckys Souvlakis </string>
+			<key>OriginalType</key>
+			<integer>3</integer>
+			<key>Type</key>
+			<integer>0</integer>
+			<key>ZoomLevel</key>
+			<integer>15</integer>
+		</dict>
+	</array>
+</dict>
+</plist>

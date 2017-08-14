@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Step by step Guide</title>
+        <style>
+            body {
+                background: #f6f6f6;
+            }
+            
+            #holder {
+                width: 579px;
+                height: 390px;
+                background: #e6e6e6;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -290px;
+                margin-top: -195px;
+            }
+            
+            #imgs {
+                width: 579px;
+                height: 350px;
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+            }
+            
+            .slider {
+                display: none;
+                position: absolute;
+            }
+            
+            .slider.first {
+                display: block;
+            }
+            
+            .arrow {
+                position: absolute;
+                width: 30px;
+                height: 30px;
+                top: 50%;
+                margin-top: -15px;
+                cursor: pointer;
+            }
+            
+            #arrow_left {
+                left: 5px;
+            }
+            
+            #arrow_right {
+                right: 5px;
+            }
+            
+            #stats {
+                width: 132px;
+                height: 22px;
+                margin: auto;
+                position: relative;
+                top: 10px;
+            }
+            
+            .control {
+                cursor: pointer;
+            }
+        </style>
+        <script src="jquery-2.1.1.min.js"></script>
+    </head>
+    <body>
+        <div id="holder">
+            <div id="imgs">
+                <img id="s0" class="slider first" src="img/slider/slider-0.png" />
+                <img id="s1" class="slider" src="img/slider/slider-1.png" />
+                <img id="s2" class="slider" src="img/slider/slider-2.png" />
+                <img id="s3" class="slider" src="img/slider/slider-3.png" />
+                <img id="s4" class="slider" src="img/slider/slider-4.png" />
+                <img id="arrow_left" class="arrow" src="img/icons/left-arrow.png" />
+                <img id="arrow_right" class="arrow" src="img/icons/right-arrow.png" />
+            </div>
+            <div id="stats">
+                <img id="c0" class="control" src="img/slider/slider-active.png" />
+                <img id="c1" class="control" src="img/slider/slider-inactive.png" />
+                <img id="c2" class="control" src="img/slider/slider-inactive.png" />
+                <img id="c3" class="control" src="img/slider/slider-inactive.png" />
+                <img id="c4" class="control" src="img/slider/slider-inactive.png" />
+            </div>
+        </div>
+        <script src="step-by-step.js"></script>
+    </body>
+</html>

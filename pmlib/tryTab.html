@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<HTML>
+<HEAD>
+<TITLE>Try</TITLE>
+<script type="text/javascript" src="./pmjslib.js"></script>
+<style type="text/css">
+
+#tabContainer {
+border-left:1px solid #c0c0c0;
+position: relative;
+top:1px;
+}
+
+#tabContainer a {
+border-top: 1px solid #c0c0c0;
+border-right: 1px solid #c0c0c0;
+padding: 3px 3px 0px 3px;
+font-family: "lucida grande", tahoma, verdana, arial, sans-serif;
+font-size: 13px;
+cursor: pointer;
+text-align:center;
+float: left;
+background: #e0e0e0;
+}
+
+#curPrice {
+border: 1px solid #c0c0c0;
+}
+
+</style>
+</HEAD>
+
+<BODY onload="init()">
+<div id="priceBoard" style="display:;">
+  <div id="tabContainer">
+	  <a id="leftBtn" style="display:;" onclick="clickLeft()">&lt;&lt;</a>
+	  <span id="tabs">
+	  </span>
+	  <a id="rightBtn" style="display:;"  onclick="clickRight()">&gt;&gt;</a>
+  </div>
+  <div id="curPrice" style="height:600px; width:800px;	clear:both;"></div>
+</div>
+
+<script type="text/javascript">
+var gAvailTabWidth = 0;
+var gRIndex = 0;
+var gLIndex = 0;
+var gTabsArr;
+var gTabsLen = [];
+function init()
+{
+
+	gAvailTabWidth = getAvailTabWidth(800);
+	var tabs = document.getElementById("tabs");
+	createTabs(tabs, ["China", "Apple", "In-one", "HP", "HelloTech","US", "1", "2", "3", "4", "5", "6", "7"], clickTab, 32);
+	gTabsArr = tabs.getElementsByTagName("a");
+	setDymEltHeight(document.getElementById("tabContainer"));
+	procTabs(gTabsArr, gAvailTabWidth);
+	procEdge(0, gRIndex, gTabsArr.length);
+	//setDymEltWidth(document.getElementById("tabContainer"));
+}
+
+function procEdge(start, end, len)
+{
+	fflog(start + " " +  end+ " " +len)
+	document.getElementById("leftBtn").style.display= start==0? "none" : "";
+	document.getElementById("rightBtn").style.display= end==len-1? "none": "";
+}
+
+function clickRight()
+{
+	var tabs = gTabsArr;
+	for(var i=0; i<gRIndex; i++)
+		tabs[i].style.display="none";
+
+	for(var i=gRIndex; i<tabs.length; i++)
+		tabs[i].style.display="";
+
+	gLIndex = gRIndex;
+	procTabs(tabs, gAvailTabWidth);
+	procEdge(gLIndex, gRIndex, gTabsArr.length);
+}
+
+function clickLeft()
+{
+	var tabs = gTabsArr;
+
+	for(var i=0; i<gTabsArr.length; i++)
+		tabs[i].style.display="block";
+
+	var tmp = gLIndex;
+	gRIndex = 0;
+	gLIndex = 0;
+	fflog("tmp="+tmp)
+	while(tmp>gRIndex)
+		clickRight();
+	procEdge(gLIndex, gRIndex, gTabsArr.length);
+}
+
+function createTabs(container, arr, func, size, chr)
+{
+	var str = "";
+	!size? size=0: "";
+	!chr? chr = "&nbsp;":"";
+	for(var i=0; i<arr.length; i++)
+	{
+		str += "<a>"+padHtmlChar(arr[i], size, chr) +"</a>"
+	}
+	container.innerHTML = str;
+
+	if(func)
+	{
+		for(var i=0; i<container.childNodes.length; i++)
+			container.childNodes[i].onclick = func;
+	}
+
+	for(var i=0; i<container.childNodes.length; i++)
+		gTabsLen.push(container.childNodes[i].offsetWidth);
+
+	//setDymEltHeight(container);
+	//setDymEltWidth(container);
+	//alert(container.style.height);
+}
+
+function clickTab()
+{
+	fflog(this.textContent);
+	fflog(document.getElementById("tabContainer").offsetWidth)
+	//fflog(document.getElementById("tabContainer").offsetWidth)
+}
+
+function getAvailTabWidth(maxWidth)
+{
+	//logObj(container.firstChild, "offsetWidth", "tagName")
+	var obj = document.getElementById("leftBtn");
+	return maxWidth - obj.offsetWidth *2;
+}
+
+function procTabs(tabs, width)
+{
+	fflog("S  gLIndex="+gLIndex+", gRIndex="+gRIndex);
+	var curSize = 0;
+	for(var i=gLIndex; i<gTabsLen.length; i++)
+	{
+		gRIndex = i;
+
+		if(curSize + gTabsLen[i]> width)
+			break;
+		curSize += gTabsLen[i];
+	}
+	fflog("E  gLIndex="+gLIndex+", gRIndex="+gRIndex);
+	for(var i=gRIndex; i<tabs.length; i++)
+	{
+		tabs[i].style.display = "none";
+	}
+
+}
+</script>
+
+</BODY>
+</HTML>
